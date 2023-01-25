@@ -1,0 +1,38 @@
+:root {
+  --clr-ntrl-min: #fff;
+  --clr-ntrl-max: #000;
+  --clr-100: #d41443;
+  --clr-200: #ffa5ba;
+  --clr-300: #907e82;
+  --clr-400: #f0d1a5;
+  --clr-500: #ffb8ca;
+  --clr-600: #e1e1e1;
+  --clr-700: #fff5f6;
+  --clr-800: #c2e297;
+  --clr-900: #e17992;
+  --ff-base: "DM Sans";
+  --ff-alt: "Titan One";
+  --fs-base: 1.4rem;
+  --fs-alt: 1.6rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: var(--fs-base);
+  font-family: var(--ff-base);
+}
+
+ul {
+  list-style: none;
+}/*# sourceMappingURL=main.css.map */
