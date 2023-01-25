@@ -1,1 +1,0 @@
-# projekt-grupa-1
