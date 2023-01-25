@@ -1,7 +1,20 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-// Style dla pliku z przykładem HTML fragmentu
-@import './example';
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: var(--fs-base);
+  font-family: var(--ff-base);
+}
+
+ul {
+  list-style: none;
+}
