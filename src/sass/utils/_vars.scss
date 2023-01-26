@@ -15,6 +15,7 @@ $jupiter: #e1e1e1;
 $sea-salt-sherbet: #fff5f6;
 $lickety-split: #c2e297;
 $impatient-pink: #e17992;
+$bgreview-grey: #d9d9d9;
 $ff-base: 'DM Sans';
 $ff-alt: 'Titan One';
 $fs-base: 1.4rem;
@@ -30,7 +31,7 @@ $fs-h3-tab: 4.8rem;
 $fs-h3-mob: 3.4rem;
 
 //font-family,font-weight,font-size,line-height,letter-spacing
-@mixin ff-fw-fs-lh-ls($ff-raleway, $fw, $fs, $lh, $ls) {
+@mixin font-properties($ff-base, $fw, $fs-base, $lh, $ls) {
   font-family: $ff-base;
   font-weight: $fw;
   font-size: $fs-base;
