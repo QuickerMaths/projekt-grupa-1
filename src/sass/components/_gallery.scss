@@ -1,0 +1,43 @@
+.gallery {
+background-image: url("/src/images/gallery-mobile.jpg");
+max-width: 364px;
+height: 122px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .gallery {
+      background-image: url("/src/images/gallery-tablet@2.jpg");
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .gallery {
+      background-image: url("/src/images/gallery-tablet.jpg");
+      max-width: 768px;
+      height: 264px;
+    }
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url("/src/images/gallery-tablet@2.jpg");
+    max-width: 768px;
+    height: 264px;
+  }
+}
+@media screen and (min-width: 1200px) {
+    .gallery {
+      background-image: url("/src/images/gallery-desktop.jpg");
+      max-width: 1200px;
+      height: 430px;
+    }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url("/src/images/gallery-desktop@2.jpg");
+    max-width: 1200px;
+    height: 480px;
+  }
+}
