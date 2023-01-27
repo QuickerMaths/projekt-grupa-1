@@ -1,74 +1,70 @@
 .products{
-    width: calc(100% - 200px);
+    width: 100%;
     display: flex;
     flex-direction: column;
    align-items: center;
-justify-content: center;}
+   justify-content: center;}
+
 
     .products__label{
-        font-size: 44px;
-        display: block;
+
+        display: flex;
         align-items: center;
+        margin-top: 121px;
+        margin-bottom: 15px;
+        font-size:21px;
+        font-weight: 400;
+        font-family: var(--ff-alt);
+        color: --amelies-tutu;
     }
     
     .products__title{
-        font-size: 60px;
-        color: palevioletred;
-    }
 
-    .products__offer{
         display: flex;
-        column-gap: 30px;
-        list-style-type: none;
-        width: calc(100% - 500px);
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 144px;
+        font-size: 36px;
+        font-weight: 400;
+        font-family: --ff-alt;
+        color: --blueberry-lemonade;
+        
     }
 
     .products__menu{
+        width:calc(100% - 40px);
         display: flex;
         flex-direction: column;
-        column-gap: 50px;
-        padding: 50px;
-        background-color: aqua;
+        display: flex;
+        list-style-type: none;
+        row-gap: 17px;
+       border-radius: 10px;
+        align-self: center;
+        justify-content: center;
+        padding: 0;
     }
 
-    .products__menu--pink{
+    .products__menu-items{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 20px;
+        align-self: center;
+        justify-content: center;
+    }
+
+
+    .products__menu-items--pink{
         background-color: palevioletred;
-        border-radius: 10px;
-        padding: 20px;
+
  
     }
-    .products__menu--beige{
+    .products__menu-items--beige{
         background-color: bisque;
-        border-radius: 10px;
-        padding: 20px;
- 
+
     }
 
-    .products__menu--green{
+    .products__menu-items--green{
         background-color: greenyellow;
-        border-radius: 10px;
-        padding: 20px;
-
+  
     }
-
-    .product__menu-description{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-    }
-
-    .product__span{
-        display: flex;
-        font-weight: 700;
-        font-size: 30px;
-        align-items: center;
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-
-    }
-
-    
-    
