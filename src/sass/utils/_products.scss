@@ -1,0 +1,106 @@
+.products{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;}
+
+
+    .products__label{
+        display: flex;
+        align-items: center;
+        margin-top: 121px;
+        margin-bottom: 15px;
+        font-size:21px;
+        font-weight: 400;
+        font-family: $ff-alt;
+        color: $amelies-tutu;
+    }
+    
+    .products__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 144px;
+        font-size: 36px;
+        font-weight: 400;
+        font-family: $ff-alt;
+        color: $blueberry-lemonade;
+        
+    }
+
+    .products__offer{
+        width:calc(100% - 40px);
+        display: flex;
+        list-style-type: none;
+        // width: calc(100% - 15px);
+        // /* justify-content: space-between; */
+        padding: 0;
+        margin: 0;
+    }
+
+    .products__menu{
+        display: flex;
+        flex-direction: column;
+        column-gap: 50px;
+
+        row-gap: 17px;
+    }
+
+    .products__menu--pink{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        background-color: palevioletred;
+        border-radius: 10px;
+        padding: 20px;
+ 
+    }
+    .products__menu--beige{
+        background-color: bisque;
+        border-radius: 10px;
+        padding: 20px;
+ 
+    }
+
+    .products__menu--green{
+        background-color: greenyellow;
+        border-radius: 10px;
+        padding: 20px;
+
+    }
+
+    .product__menu-description{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .product__name{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: $fs-h4-mob;
+        font-family: $ff-alt;
+        color: $white;
+        margin-top: 22px;
+        margin-bottom: 66px;
+
+    }
+    .products__button{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+    }
+.products__button-icon{
+fill:pink;
+} 
+    
+    
