@@ -5,6 +5,10 @@ height: 122px;
 background-repeat: no-repeat;
 background-position: center;
 margin: 0px auto;
+
+&__container {
+  display: none;
+}
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .gallery {
