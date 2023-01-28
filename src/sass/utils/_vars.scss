@@ -1,5 +1,11 @@
 $white: #fff;
 $black: #000;
+//line height
+$lh: 150%;
+//letter spacing
+$ls: 0.04em;
+//font weight
+$fw: 500;
 $blueberry-lemonade: #d41443;
 $amelies-tutu: #ffa5ba;
 $gypsy-magic: #907e82;
@@ -9,6 +15,7 @@ $jupiter: #e1e1e1;
 $sea-salt-sherbet: #fff5f6;
 $lickety-split: #c2e297;
 $impatient-pink: #e17992;
+$bgreview-grey: #d9d9d9;
 $social-icon-pink: #fea5bb;
 $hover-red: #c7133e;
 $hover-background: #ecebeb;
@@ -26,3 +33,12 @@ $fs-h2-mob: 1.8rem;
 $fs-h3-desk: 5.8rem;
 $fs-h3-tab: 4.8rem;
 $fs-h3-mob: 3.4rem;
+
+//font-family,font-weight,font-size,line-height,letter-spacing
+@mixin font-properties($ff-base, $fw, $fs-base, $lh, $ls) {
+  font-family: $ff-base;
+  font-weight: $fw;
+  font-size: $fs-base;
+  line-height: $lh;
+  letter-spacing: $ls;
+} ;
