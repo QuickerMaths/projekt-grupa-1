@@ -1,7 +1,9 @@
 .contacts {
-  background-image: linear-gradient(to bottom, $white 6%, $sea-salt-sherbet 6%);
-  padding-bottom: 34px;
-  //padding-bottom ewentualnie do usunięcia jak będziemy łączyć sekcje)
+  background-image: linear-gradient(to bottom, $white 11%, $sea-salt-sherbet 11%);
+  padding-top: 132px;
+  padding-bottom: 30px;
+  //do wykasowania przy łączeniu z footer
+
   &__sectiontitle {
     display: none;
   }
@@ -139,14 +141,11 @@
     &__card-list {
       flex-wrap: nowrap;
       gap: 10px;
-      justify-content: space-between;
+      justify-content: center;
       margin-left: 36px;
       margin-right: 36px;
     }
     &__list-item {
-      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-      border-radius: 24px;
-      padding: 43px 20px;
       margin-bottom: 81px;
       margin-left: 0;
       margin-right: 0;
@@ -156,10 +155,9 @@
       margin-bottom: 81px;
     }
     &__btn-list {
-      display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: 14.5px;
+      gap: 15px;
     }
   }
 }
@@ -170,8 +168,32 @@
 
 @media screen and (min-width: 1200px) {
   .contacts {
-    background-image: linear-gradient(to bottom, $white 6%, $sea-salt-sherbet 6%),
-      url(../../images/contacts/contactsbg.png);
+    background-image: linear-gradient(to bottom, $white 25%, $sea-salt-sherbet 25%);
+    // , url(../../images/contacts/contactsbg.png)
+  }
+
+  .contacts {
+    &__card-list {
+      flex-wrap: nowrap;
+      gap: 31px;
+      justify-content: center;
+      margin-left: 115px;
+      margin-right: 115px;
+    }
+    &__list-item {
+      margin-bottom: 86px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__list-item:last-child {
+      margin-bottom: 86px;
+    }
+    &__btn-list {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
   }
 }
 /* ---------- END RESPONSIVE DESKTOP ---------- */
