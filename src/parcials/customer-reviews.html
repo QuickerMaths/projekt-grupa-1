@@ -9,11 +9,25 @@
   <body>
     <section class="container-reviews">
       <div class="container-reviews__img">
-        <img src="/src/images/reviewer1.jpg" alt="uśmiechnięta dziewczyna z kręconymi włosami" />
+        <img
+          width="85"
+          height="85"
+          alt="uśmiechnięta dziewczyna z kręconymi włosami"
+          src="images/reviewer1.jpg"
+          srcset="
+            images/reviewer1@2x.jpg 300w,
+            images/reviewer1@3x.jpg 768w,
+            images/reviewer2@2x.jpg 300w,
+            images/reviewer2@3x.jpg 768w,
+            images/reviewer3@2x.jpg 300w,
+            images/reviewer3@3x.jpg 768w
+          "
+          sizes="(min-width: 1200px) 1062px, (min-width: 768px) 708px, 100vw"
+          alt="uśmiechnięta dziewczyna z kręconymi włosami"
+        />
       </div>
       <div class="container-reviews__text-block">
         <div class="container-reviews__linear-grad">
-          <img class="container-reviews__quotes-img" src="/src/images/qutes.png" alt="qutes" />
           <p class="container-reviews__text">
             Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
             hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
@@ -21,11 +35,11 @@
         </div>
       </div>
 
-      <div class="container-reviews__points-block">
-        <div class="container-reviews__point"></div>
-        <div class="container-reviews__point"></div>
-        <div class="container-reviews__point"></div>
-      </div>
+      <ul class="container-reviews__points-block">
+        <li class="container-reviews__point"></li>
+        <li class="container-reviews__point"></li>
+        <li class="container-reviews__point"></li>
+      </ul>
 
       <div class="container-reviews__reviewier-data-block">
         <p class="container-reviews__reviewier-data">Emily, Los Angeles</p>
