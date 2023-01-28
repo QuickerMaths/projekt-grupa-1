@@ -113,6 +113,18 @@
     line-height: 150%;
   }
 
+  &__icon--white {
+    fill: none;
+    stroke: $white;
+    margin-left: 8px;
+  }
+
+  &__icon--pink {
+    fill: none;
+    stroke: $blueberry-lemonade;
+    margin-left: 8px;
+  }
+
   &__btn-list {
     display: flex;
     flex-direction: column;
