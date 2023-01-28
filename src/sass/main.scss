@@ -4,7 +4,12 @@
 
 @import 'utils/vars';
 @import 'utils/global-style';
+
 @import 'components/header';
+
+@import 'src/sass/components/customer-reviews';
+@import 'components/contacts';
+
 @import 'components/about';
 @import 'components/modal_about';
 @import 'components/products';

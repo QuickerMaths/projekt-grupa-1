@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+  <body>
+    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
+    
+     <!-- Header -->
+      <include src="./partials/_header.html"></include>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ice Cream</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="./sass/main.scss" />
-</head>
+    <!-- Products Section -->
 
-<body>
+    <include src="./partials/_products.html"></include>
 
-  <include src="./partials/_header.html" />
-  <include src="./partials/_products.html" />
-  <include src="./partials/_about.html" />
-  <include src="./partials/_modal_about.html" />
+    <!-- About Section-->
 
-  <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-  <script src="./modal_about.js"></script>
-  <script src="./index.js" type="module"></script>
+    <include src="./partials/_about.html"></include>
+    <include src="./partials/_modal_about.html"></include>
+
+    <!-- Customer Reviews Section -->
+
+    <include src="./partials/customer-reviews.html"></include>
+
+    <!-- Contacts Section -->
+
+    <include src="./partials/_contacts.html"></include>
+
 </body>
 
 </html>
