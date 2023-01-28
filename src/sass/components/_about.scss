@@ -4,6 +4,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< Updated upstream
+=======
+  background-image: url(../images/about/mobile_milk@x1.png);
+  background-size: 100vw;
+  background-position: center bottom 100px;
+  background-repeat: no-repeat;
+>>>>>>> Stashed changes
   &__header1 {
     font-family: $ff-alt;
     font-size: $fs-h2-mob;
@@ -25,6 +32,10 @@
   }
   &__picture {
     margin-bottom: 4.6rem;
+<<<<<<< Updated upstream
+=======
+    padding: 0 2rem;
+>>>>>>> Stashed changes
   }
   &__p1 {
     font-family: $ff-base;
@@ -40,16 +51,53 @@
     font-family: $ff-base;
     font-size: 1.2rem;
     font-weight: 500;
+<<<<<<< Updated upstream
     margin-bottom: 4.7rem;
+=======
+    margin-bottom: 1.7rem;
+>>>>>>> Stashed changes
     color: $gypsy-magic;
     padding: 0 5rem;
     text-align: left;
     line-height: 1.9rem;
   }
   &__btn {
+<<<<<<< Updated upstream
     .btn__icon {
       stroke: 2px solid $blueberry-lemonade;
       fill: $blueberry-lemonade;
     }
   }
+=======
+    font-family: $ff-base;
+    font-weight: 700;
+    font-size: $fs-base;
+    line-height: 2.1rem;
+    width: 17.6rem;
+    height: 4.4rem;
+    line-height: 1.8rem;
+    background: $white;
+    color: $blueberry-lemonade;
+    border: none;
+    border-radius: 2.2rem;
+    margin-bottom: 3.9rem;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &__icon {
+      margin-left: 1.362rem;
+      width: 1rem;
+      height: 1.4rem;
+      fill: none;
+      stroke: $blueberry-lemonade;
+      stroke-width: 0.2rem;
+    }
+  }
+  &__btn:hover {
+    background-color: #ecebeb;
+  }
+>>>>>>> Stashed changes
 }
