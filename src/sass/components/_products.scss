@@ -1,102 +1,172 @@
 .products{
     width: 100%;
     display: flex;
+    margin: 0;
+    padding: 0;
     flex-direction: column;
    align-items: center;
-   justify-content: center;}
+   justify-content: center;
 
-
-    .products__label{
-
+    &__label{
         display: flex;
         align-items: center;
-        margin-top: 121px;
-        margin-bottom: 15px;
-        font-size:21px;
-        font-weight: 400;
-        font-family: var(--ff-alt);
-        color: --amelies-tutu;
+        margin-top: 12.1rem;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        font-size:2.1rem;
+        font-family: $ff-alt;
+        color: $amelies-tutu;
     }
     
-    .products__title{
-
+    &__title{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 144px;
-        font-size: 36px;
-        font-weight: 400;
-        font-family: --ff-alt;
-        color: --blueberry-lemonade;
+        margin-bottom: 14.4rem;
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        font-family: $ff-alt;
+        color: $blueberry-lemonade;
         
     }
 
-    .products__menu{
-        width:calc(100% - 40px);
+
+    &__menu{
+        width:calc(100% - 4rem);
         display: flex;
         flex-direction: column;
-        display: flex;
         list-style-type: none;
-        row-gap: 17px;
-       border-radius: 10px;
-        align-self: center;
-        justify-content: center;
-        padding: 0;
-    }
-
-    .products__menu-items{
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px;
-        padding: 20px;
-        align-self: center;
-        justify-content: center;
-    }
-
-
-    .products__menu-items--pink{
-        background-color: palevioletred;
-
- 
-    }
-    .products__menu-items--beige{
-        background-color: bisque;
-
-    }
-
-    .products__menu-items--green{
-        background-color: greenyellow;
-  
-    }
-
-    .product__menu-description{
-        display: flex;
+        row-gap: 15rem;
+       border-radius: 1rem;
         align-items: center;
         justify-content: center;
-        
+        margin-bottom: 11.2rem;
     }
 
-    .product__name{
+    &__container{
+       display: flex;
+       width:24.9rem;
+       height: 25.2rem;
+       position: absolute;
+       top: -28%;
+
+
+    &--pink{
+            &::before{
+                content: "";
+                position: absolute;
+                background: url("/src/images/products_img/icecreamx2_mob.png") no-repeat center center/cover;
+                width:24.9rem;
+                height: 25.2rem;
+    }}
+    &--beige{
+        &::before{
+            content: "";
+            position: absolute;
+            background: url("/src/images/products_img/icecoffex2_mob.png")no-repeat center center/cover;
+            width:24.9rem;
+            height: 25.2rem;
+}}
+&--green{
+    &::before{
+        content: "";
+        position: absolute;
+        background: url("/src/images/products_img/milkshakex2_mob.png") no-repeat center center/cover;
+        width:24.9rem;
+        height: 25.2rem;
+}}
+
+}
+
+
+    &__menu-items{
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-family: $ff-alt;
+        padding-left: 4.1rem;
+        padding-right: 3.9rem;
+       
+
+    &--pink{
+        background-color:$rosie;
+}
+
+    
+    &--beige{
+        background-color:$amber-moon;
+    }
+
+    &--green{
+        background-color:$lickety-split;
+    }}
+
+
+
+&__name{
         display: flex;
         align-items: center;
         justify-content: center;
         font-weight: 400;
-        font-size: --fs-h4-mob;
-        font-family: --ff-alt;
-        color: --white;
-        margin-top: 22px;
-        margin-bottom: 66px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: $ff-alt;
+        color: $white;
+        margin-top: 16.1rem;
+        margin-bottom: 6.6rem;
+        color: $white;
 
     }
-    .products__button{
+        
+&__swipe{
+    display: flex;
+    position: absolute;
+    margin-bottom: 3rem;
+ 
+
+    &::after{
+        content: "...";
+        // position: absolute;
+        color:$white;
+        font-size: 6rem;
+        top: 35%;
+        margin-bottom: 3rem;
+
+    }
+
+}
+    
+ &__menu-description{
+    margin-bottom: 3rem;
+    font-weight:700;
+    font-size: 1.4rem;
+    font-family: $ff-base;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.4;
+    line-height: 2.128rem;
+
+    
+}
+
+// btn od Tomka tu będzie, ten jest testowy
+&__button{
         display: flex;
-        width: 40px;
-        height: 40px;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
         background-color: #fff;
-        align-items: center;
-        justify-content: center;
+        margin-bottom: 4.1rem;
+        margin-top: 3rem;
     }
-.products__button-icon{
+&__button-icon{
 fill:pink;
 } 
+    }
