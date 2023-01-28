@@ -1,147 +1,139 @@
-.products{
-    width: 100%;
+.products {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__label {
     display: flex;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    margin-top: 12.1rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    font-family: $ff-alt;
+    color: $amelies-tutu;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14.4rem;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    font-family: $ff-alt;
+    color: $blueberry-lemonade;
+  }
+
+  &__menu {
+    width: calc(100% - 4rem);
+    display: flex;
     flex-direction: column;
-   align-items: center;
-   justify-content: center;
+    list-style-type: none;
+    row-gap: 15rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 11.2rem;
+  }
 
-    &__label{
-        display: flex;
-        align-items: center;
-        margin-top: 12.1rem;
-        margin-bottom: 1.5rem;
-        text-transform: uppercase;
-        font-size:2.1rem;
-        font-family: $ff-alt;
-        color: $amelies-tutu;
-    }
-    
-    &__title{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 14.4rem;
-        font-size: 3.6rem;
-        text-transform: uppercase;
-        font-family: $ff-alt;
-        color: $blueberry-lemonade;
-        
-    }
+  &__container {
+    display: flex;
+    width: 24.9rem;
+    height: 25.2rem;
+    position: absolute;
+    top: -28%;
 
-
-    &__menu{
-        width:calc(100% - 4rem);
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        row-gap: 15rem;
-       border-radius: 1rem;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 11.2rem;
-    }
-
-    &__container{
-       display: flex;
-       width:24.9rem;
-       height: 25.2rem;
-       position: absolute;
-       top: -28%;
-
-
-    &--pink{
-            &::before{
-                content: "";
-                position: absolute;
-                background: url("/src/images/products_img/icecreamx2_mob.png") no-repeat center center/cover;
-                width:24.9rem;
-                height: 25.2rem;
-    }}
-    &--beige{
-        &::before{
-            content: "";
-            position: absolute;
-            background: url("/src/images/products_img/icecoffex2_mob.png")no-repeat center center/cover;
-            width:24.9rem;
-            height: 25.2rem;
-}}
-&--green{
-    &::before{
-        content: "";
+    &--pink {
+      &::before {
+        content: '';
         position: absolute;
-        background: url("/src/images/products_img/milkshakex2_mob.png") no-repeat center center/cover;
-        width:24.9rem;
+        background: url('/src/images/products_img/icecreamx2_mob.png') no-repeat center center/cover;
+        width: 24.9rem;
         height: 25.2rem;
-}}
+      }
+    }
+    &--beige {
+      &::before {
+        content: '';
+        position: absolute;
+        background: url('/src/images/products_img/icecoffex2_mob.png') no-repeat center center/cover;
+        width: 24.9rem;
+        height: 25.2rem;
+      }
+    }
+    &--green {
+      &::before {
+        content: '';
+        position: absolute;
+        background: url('/src/images/products_img/milkshakex2_mob.png') no-repeat center
+          center/cover;
+        width: 24.9rem;
+        height: 25.2rem;
+      }
+    }
+  }
 
-}
+  &__menu-items {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: $ff-alt;
+    padding-left: 4.1rem;
+    padding-right: 3.9rem;
 
-
-    &__menu-items{
-        display: flex;
-        flex-direction: column;
-        border-radius: 1rem;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        font-family: $ff-alt;
-        padding-left: 4.1rem;
-        padding-right: 3.9rem;
-       
-
-    &--pink{
-        background-color:$rosie;
-}
-
-    
-    &--beige{
-        background-color:$amber-moon;
+    &--pink {
+      background-color: $rosie;
     }
 
-    &--green{
-        background-color:$lickety-split;
-    }}
-
-
-
-&__name{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 400;
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-family: $ff-alt;
-        color: $white;
-        margin-top: 16.1rem;
-        margin-bottom: 6.6rem;
-        color: $white;
-
+    &--beige {
+      background-color: $amber-moon;
     }
-        
-&__swipe{
+
+    &--green {
+      background-color: $lickety-split;
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: $ff-alt;
+    color: $white;
+    margin-top: 16.1rem;
+    margin-bottom: 6.6rem;
+    color: $white;
+  }
+
+  &__swipe {
     display: flex;
     position: absolute;
     margin-bottom: 3rem;
- 
 
-    &::after{
-        content: "...";
-        // position: absolute;
-        color:$white;
-        font-size: 6rem;
-        top: 35%;
-        margin-bottom: 3rem;
-
+    &::after {
+      content: '...';
+      // position: absolute;
+      color: $white;
+      font-size: 6rem;
+      top: 35%;
+      margin-bottom: 3rem;
     }
+  }
 
-}
-    
- &__menu-description{
+  &__menu-description {
     margin-bottom: 3rem;
-    font-weight:700;
+    font-weight: 700;
     font-size: 1.4rem;
     font-family: $ff-base;
     color: $white;
@@ -150,24 +142,102 @@
     align-items: center;
     letter-spacing: 0.4;
     line-height: 2.128rem;
+  }
 
-    
+  // btn od Tomka tu będzie, ten jest testowy
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 4.1rem;
+    margin-top: 3rem;
+  }
+  &__button-icon {
+    fill: pink;
+  }
 }
 
-// btn od Tomka tu będzie, ten jest testowy
-&__button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 4rem;
-        height: 4rem;
-        border-radius: 50%;
-        background-color: #fff;
-        margin-bottom: 4.1rem;
-        margin-top: 3rem;
-    }
-&__button-icon{
-fill:pink;
-} 
-    }
-    
+//buttony do strzałek od Daniela//
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 20px;
+  z-index: 10;
+  background-color: pink;
+  width: 500px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0px solid black;
+  background-color: pink;
+  border-radius: 20px;
+}
+&__title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: pink;
+  text-align: center;
+  padding-left: 130px;
+}
+&__modal-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: pink;
+}
+
+&__modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+&__close-button {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+&__modal-body {
+  padding: 10px 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  background-color: pink;
+  border-radius: 20px;
+}
+&__modal-picture {
+  padding-bottom: 0px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
