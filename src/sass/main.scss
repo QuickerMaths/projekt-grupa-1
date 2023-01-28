@@ -1,7 +1,16 @@
 // Imports
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Titan+One&display=swap');
+
 @import 'utils/vars';
 @import 'utils/global-style';
+
+@import 'components/header';
+
+@import 'src/sass/components/customer-reviews';
+@import 'components/contacts';
+
 @import 'components/about';
 @import 'components/modal_about';
 @import 'components/products';
+@import 'components/buttons';

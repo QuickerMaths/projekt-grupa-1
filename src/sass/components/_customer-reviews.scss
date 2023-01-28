@@ -1,0 +1,117 @@
+.container-reviews {
+  margin: 0 2rem;
+  height: 100%;
+
+  &__img {
+    display: block;
+    text-align: center;
+  }
+
+  &__text-block {
+    background-color: #fafafa;
+    margin: 0 auto;
+    margin-top: 2.9rem;
+  }
+
+  &__linear-grad {
+    margin: 0 auto;
+    width: 18rem;
+    background: linear-gradient(
+      180deg,
+      #fafafa 8rem,
+      #e1e1e1 8rem,
+      #fafafa 8.2rem,
+      #fafafa 8.2rem,
+      #fafafa 11.3rem,
+      #e1e1e1 11.3rem,
+      #fafafa 11.5rem,
+      #fafafa 11.5rem,
+      #fafafa 15.3rem,
+      #e1e1e1 15.3rem,
+      #fafafa 15.5rem,
+      #fafafa 15.5rem,
+      #fafafa 18.7rem,
+      #e1e1e1 18.7rem,
+      #fafafa 18.9rem,
+      #fafafa 18.9rem,
+      #fafafa 22.5rem,
+      #e1e1e1 22.5rem,
+      #fafafa 22.7rem,
+      #fafafa 22.7rem,
+      #fafafa 25.7rem,
+      #e1e1e1 25.7rem,
+      #fafafa 25.9rem,
+      #fafafa 25.9rem,
+      #fafafa 29.5rem,
+      #e1e1e1 29.5rem,
+      #fafafa 29.7rem,
+      #fafafa 29.7rem,
+      #fafafa 32.5rem,
+      #e1e1e1 32.5rem,
+      #fafafa 32.7rem,
+      #fafafa 32.7rem
+    );
+  }
+  &__text {
+    position: relative;
+    @include font-properties($ff-base, 500, $fs-base, 255%, 0.01em);
+    width: 15.7rem;
+    padding-top: 4.7rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__quotes-img {
+    position: absolute;
+    left: 11rem;
+    top: 15rem;
+  }
+
+  &__points-block {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  &__point {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: $blueberry-lemonade;
+  }
+
+  &__reviewier-data-block {
+    margin-top: 1.8rem;
+    text-align: center;
+  }
+
+  &__reviewier-data {
+    @include font-properties($ff-base, 500, $fs-base, 186%, 0.01em);
+  }
+
+  &__navigation {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+  }
+
+  &__icon-home {
+    fill: $blueberry-lemonade;
+  }
+
+  &__nav-sec-rev {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: $bgreview-grey;
+  }
+
+  &__nav-third-rev {
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: $bgreview-grey;
+  }
+}
