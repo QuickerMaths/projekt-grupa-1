@@ -1,7 +1,7 @@
 .contacts {
   background-image: linear-gradient(to bottom, $white 11%, $sea-salt-sherbet 11%);
   padding-top: 132px;
-  padding-bottom: 30px;
+  padding-bottom: 113px;
   //do wykasowania przy łączeniu z footer
 
   &__sectiontitle {
@@ -136,16 +136,30 @@
 }
 
 /* ---------- END RESPONSIVE TABLET ---------- */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .contacts {
+    padding-top: 119px;
+    padding-bottom: 158px;
+    //do wykasowania przy łączeniu z footer
     &__card-list {
       flex-wrap: nowrap;
-      gap: 10px;
+      gap: 20px;
       justify-content: center;
       margin-left: 36px;
       margin-right: 36px;
     }
+    &__title-cafe {
+      font-size: 1.6rem;
+      width: 73px;
+      height: 28px;
+    }
+    &__title-foodtruck {
+      font-size: 1.6rem;
+      width: 138px;
+      height: 28px;
+    }
     &__list-item {
+      padding: 50px 32px;
       margin-bottom: 81px;
       margin-left: 0;
       margin-right: 0;
@@ -153,6 +167,32 @@
 
     &__list-item:last-child {
       margin-bottom: 81px;
+    }
+
+    &__city {
+      font-size: 1.4rem;
+      padding-bottom: 14px;
+    }
+    &__description {
+      font-size: 1.4rem;
+      line-height: 166%;
+    }
+    &__separation-line {
+      border: 1px solid $jupiter;
+      margin: 30px 0px;
+    }
+
+    &__days {
+      font-size: 1.4rem;
+    }
+
+    &__time {
+      font-size: 1.4rem;
+    }
+
+    &__address-link {
+      font-size: 1.4rem;
+      line-height: 183%;
     }
     &__btn-list {
       flex-direction: row;
@@ -166,28 +206,28 @@
 
 /* ---------- RESPONSIVE DESKTOP ---------- */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts {
     padding-top: 132px;
     padding-bottom: 165px;
     //do wykasowania przy łączeniu z footer
-    background-image: linear-gradient(to bottom, $white 24%, $sea-salt-sherbet 24%);
-    // background-image: url(../images/contacts/contactsbg.png);
-
-    // background-size: 100vw;
-    // background-position: top 100px;
-    // background-repeat: no-repeat;
+    background-color: linear-gradient(to bottom, $white 25%, $sea-salt-sherbet 25%);
+    background-image: url(../../images/contacts/contactsbg.png);
+    background-size: 100vw;
+    background-position: center bottom 100px;
+    background-repeat: no-repeat;
   }
 
   .contacts {
     &__card-list {
       flex-wrap: nowrap;
-      gap: 31px;
+      gap: 30px;
       justify-content: center;
       margin-left: 115px;
       margin-right: 115px;
     }
     &__list-item {
+      padding: 52px 43px 61px 43px;
       margin-bottom: 86px;
       margin-left: 0;
       margin-right: 0;
@@ -195,6 +235,41 @@
 
     &__list-item:last-child {
       margin-bottom: 86px;
+    }
+    &__title-cafe {
+      font-size: 1.6rem;
+      width: 73px;
+      height: 28px;
+    }
+    &__title-foodtruck {
+      font-size: 1.6rem;
+      width: 138px;
+      height: 28px;
+    }
+    &__city {
+      font-size: 1.6rem;
+      padding-bottom: 14px;
+    }
+    &__description {
+      font-size: 16px;
+      line-height: 166%;
+    }
+    &__separation-line {
+      border: 1px solid $jupiter;
+      margin: 30px 0px;
+    }
+
+    &__days {
+      font-size: 1.6rem;
+    }
+
+    &__time {
+      font-size: 1.6rem;
+    }
+
+    &__address-link {
+      font-size: 1.6rem;
+      line-height: 183%;
     }
     &__btn-list {
       flex-direction: row;
@@ -205,7 +280,6 @@
 }
 /* ---------- END RESPONSIVE DESKTOP ---------- */
 
-/* ---------- ANIMATION DESKTOP ---------- */
 // @-webkit-keyframes jump {
 // 	0% {
 // 		-webkit-transform: translateY(0);
