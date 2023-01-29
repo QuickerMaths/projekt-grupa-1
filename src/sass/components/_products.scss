@@ -169,5 +169,62 @@
 &__button-icon{
 fill:pink;
 } 
+
+&__btn{
+    
+}
     }
     
+
+    @media screen and (min-width: 768px){
+        .products{
+        
+            &__label{
+                font-size:3rem;
+            }
+            
+            &__title{
+                margin-bottom: 15rem;
+                font-size: 5.5rem;
+            }
+        
+            &__menu{
+                width:calc(100% - 6.8rem);
+                flex-direction: row;
+                column-gap: 2rem;
+                justify-content: space-between;
+            }
+        
+            &__menu-items{
+                padding-left: 1.1rem;
+                padding-right: 1.1rem;
+            }
+            
+         &__menu-description{
+            margin-bottom: 0rem;
+            line-height: 2.464rem;
+            padding: 0rem 2rem 0 2rem;
+        }
+        
+        // btn od Tomka tu będzie, ten jest testowy
+        &__button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                background-color: #fff;
+                margin-bottom: 4.1rem;
+                margin-top: 3rem;
+            }
+        &__button-icon{
+        fill:pink;
+        } 
+            }
+            
+
+
+
+    }
+
