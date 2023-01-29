@@ -48,7 +48,7 @@
         background-color: $hover-red;
       }
     }
-    --howmade {
+    &--howmade {
       border-radius: 20px;
       width: 82, 8px;
       background: $white;
@@ -94,8 +94,9 @@
     justify-content: center;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
 
-    --red {
+    &--red {
       background-color: $blueberry-lemonade;
       color: $white;
 
@@ -104,7 +105,7 @@
       }
     }
 
-    --white {
+    &--white {
       background-color: $white;
       color: $blueberry-lemonade;
 
@@ -113,21 +114,21 @@
       }
     }
   }
-}
 
-&__social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: $white;
-  background-color: $social-icon-pink;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $white;
+    background-color: $social-icon-pink;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    background-color: $blueberry-lemonade;
+    &:hover {
+      background-color: $blueberry-lemonade;
+    }
   }
 }
