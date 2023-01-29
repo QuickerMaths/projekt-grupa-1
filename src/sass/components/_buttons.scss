@@ -20,6 +20,9 @@
 
   &__menu {
     width: 209px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
     height: 44px;
     background: $white;
     border-radius: 22px;
@@ -36,11 +39,12 @@
     line-height: 1.25;
     font-weight: 400;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    border-radius: 20px;
 
     &--products {
       padding: 8px 15px;
       background: $blueberry-lemonade;
-      border-radius: 20px;
       color: $white;
 
       &:hover {
@@ -69,6 +73,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
 
   &__read-more {
@@ -89,6 +94,9 @@
   }
 
   &__contact {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
     width: 161px;
     height: 44px;
     border-radius: 22px;
