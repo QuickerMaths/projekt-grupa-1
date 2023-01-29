@@ -1,7 +1,9 @@
 .contacts {
-  background-image: linear-gradient(to bottom, $white 6%, $sea-salt-sherbet 6%);
-  padding-bottom: 34px;
-  //padding-bottom ewentualnie do usunięcia jak będziemy łączyć sekcje)
+  background-image: linear-gradient(to bottom, $white 11%, $sea-salt-sherbet 11%);
+  padding-top: 132px;
+  padding-bottom: 30px;
+  //do wykasowania przy łączeniu z footer
+
   &__sectiontitle {
     display: none;
   }
@@ -113,7 +115,16 @@
     line-height: 150%;
   }
 
-  &__button-list {
+  &__icon--white {
+    fill: none;
+    stroke: $white;
+    margin-left: 8px;
+  }
+
+  &__icon--pink {
+    fill: none;
+    stroke: $blueberry-lemonade;
+    margin-left: 8px;
   }
 
   &__btn-list {
@@ -123,3 +134,66 @@
     gap: 10px;
   }
 }
+
+/* ---------- END RESPONSIVE TABLET ---------- */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contacts {
+    &__card-list {
+      flex-wrap: nowrap;
+      gap: 10px;
+      justify-content: center;
+      margin-left: 36px;
+      margin-right: 36px;
+    }
+    &__list-item {
+      margin-bottom: 81px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__list-item:last-child {
+      margin-bottom: 81px;
+    }
+    &__btn-list {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+}
+
+/* ---------- END RESPONSIVE TABLET ---------- */
+
+/* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    background-image: linear-gradient(to bottom, $white 25%, $sea-salt-sherbet 25%);
+    // , url(../../images/contacts/contactsbg.png)
+  }
+
+  .contacts {
+    &__card-list {
+      flex-wrap: nowrap;
+      gap: 31px;
+      justify-content: center;
+      margin-left: 115px;
+      margin-right: 115px;
+    }
+    &__list-item {
+      margin-bottom: 86px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__list-item:last-child {
+      margin-bottom: 86px;
+    }
+    &__btn-list {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+}
+/* ---------- END RESPONSIVE DESKTOP ---------- */
