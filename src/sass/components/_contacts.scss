@@ -168,8 +168,15 @@
 
 @media screen and (min-width: 1200px) {
   .contacts {
-    background-image: linear-gradient(to bottom, $white 25%, $sea-salt-sherbet 25%);
-    // , url(../../images/contacts/contactsbg.png)
+    padding-top: 132px;
+    padding-bottom: 165px;
+    //do wykasowania przy łączeniu z footer
+    background-image: linear-gradient(to bottom, $white 24%, $sea-salt-sherbet 24%);
+    // background-image: url(../images/contacts/contactsbg.png);
+
+    // background-size: 100vw;
+    // background-position: top 100px;
+    // background-repeat: no-repeat;
   }
 
   .contacts {
@@ -197,3 +204,64 @@
   }
 }
 /* ---------- END RESPONSIVE DESKTOP ---------- */
+
+/* ---------- ANIMATION DESKTOP ---------- */
+// @-webkit-keyframes jump {
+// 	0% {
+// 		-webkit-transform: translateY(0);
+// 		transform: translateY(0);
+// 	}
+// 	20% {
+// 		-webkit-transform: translateY(0);
+// 		transform: translateY(0);
+// 	}
+// 	40% {
+// 		-webkit-transform: translateY(-30px);
+// 		transform: translateY(-30px);
+// 	}
+// 	50% {
+// 		-webkit-transform: translateY(0);
+// 		transform: translateY(0);
+// 	}
+// 	60% {
+// 		-webkit-transform: translateY(-15px);
+// 		transform: translateY(-15px);
+// 	}
+// 	80% {
+// 		-webkit-transform: translateY(0);
+// 		transform: translateY(0);
+// 	}
+// 	100% {
+// 		-webkit-transform: translateY(0);
+// 		transform: translateY(0);
+// 	}
+// }
+// @keyframes jump {
+// 	0% {
+// 		transform: translateY(0);
+// 	}
+// 	20% {
+// 		transform: translateY(0);
+// 	}
+// 	40% {
+// 		transform: translateY(-30px);
+// 	}
+// 	50% {
+// 		transform: translateY(0);
+// 	}
+// 	60% {
+// 		transform: translateY(-15px);
+// 	}
+// 	80% {
+// 		transform: translateY(0);
+// 	}
+// 	100% {
+// 		transform: translateY(0);
+// 	}
+// }
+// .angry-animate {
+// 	-webkit-animation: jump 1s ease 0s infinite normal;
+// 	-moz-animation: jump 1s ease 0s infinite normal;
+// 	-ms-animation: jump 1s ease 0s infinite normal;
+// 	animation: jump 1s ease 0s infinite normal;
+// }
