@@ -115,6 +115,8 @@
         text-transform: uppercase;
         font-family: $ff-alt;
         color: $white;
+        font-weight: 400;
+        letter-spacing: 0.4;
         margin-top: 161px;
         margin-bottom: 30px;
         color: $white;
@@ -131,16 +133,16 @@
         content: "...";
         // position: absolute;
         color:$white;
-        font-size: 4rem;
+        font-size: 20px;
         top: 35%;
         margin-bottom: 30px;
+        letter-spacing: 5;
 
     }
 
 }
     
  &__menu-description{
-    margin-bottom: 3rem;
     font-weight:700;
     font-size: 1.4rem;
     font-family: $ff-base;
@@ -151,6 +153,8 @@
     letter-spacing: 0.4;
     line-height: 2.128rem;
     margin-top: 30px;
+    padding: 0 11px 0 11px;
+    text-align: center;
 
     
 }
@@ -244,7 +248,7 @@ fill:pink;
 
             &__swipe{
                 display: flex;
-                margin-bottom: 15rem;
+                margin-bottom: 100px;
              
             
                 &::after{
