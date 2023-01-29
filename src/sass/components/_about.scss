@@ -4,13 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-<<<<<<< Updated upstream
-=======
   background-image: url(../images/about/mobile_milk@x1.png);
   background-size: 100vw;
   background-position: center bottom 100px;
   background-repeat: no-repeat;
->>>>>>> Stashed changes
   &__header1 {
     font-family: $ff-alt;
     font-size: $fs-h2-mob;
@@ -32,10 +29,7 @@
   }
   &__picture {
     margin-bottom: 4.6rem;
-<<<<<<< Updated upstream
-=======
     padding: 0 2rem;
->>>>>>> Stashed changes
   }
   &__p1 {
     font-family: $ff-base;
@@ -51,24 +45,13 @@
     font-family: $ff-base;
     font-size: 1.2rem;
     font-weight: 500;
-<<<<<<< Updated upstream
-    margin-bottom: 4.7rem;
-=======
     margin-bottom: 1.7rem;
->>>>>>> Stashed changes
     color: $gypsy-magic;
     padding: 0 5rem;
     text-align: left;
     line-height: 1.9rem;
   }
   &__btn {
-<<<<<<< Updated upstream
-    .btn__icon {
-      stroke: 2px solid $blueberry-lemonade;
-      fill: $blueberry-lemonade;
-    }
-  }
-=======
     font-family: $ff-base;
     font-weight: 700;
     font-size: $fs-base;
@@ -99,5 +82,4 @@
   &__btn:hover {
     background-color: #ecebeb;
   }
->>>>>>> Stashed changes
 }
