@@ -132,14 +132,11 @@
     margin: 0 74px;
 
     &__text-block {
-      position: relative;
       width: 620px;
-      background-color: #fafafa;
       margin-top: 19px;
     }
 
     &__linear-grad {
-      border-radius: 10px;
       width: 580px;
       height: auto;
       background: linear-gradient(
@@ -163,20 +160,12 @@
       padding-top: 47px;
       padding-bottom: 34px;
       width: 95%;
-      text-align: center;
       @include font-properties($ff-base, 500, $fs-alt, 216%, 0.04em);
     }
 
     &__text::before {
-      width: 54px;
-      height: 40px;
-      display: flex;
       left: 7px;
       top: 33px;
-      position: absolute;
-      content: '';
-      background-image: url('/src/images/qutes.png');
-      opacity: 0.5;
     }
 
     &__reviewier-data {
@@ -188,13 +177,11 @@
 //Desktop
 @media screen and (min-width: 1280px) {
   .container-reviews {
-    margin: 0 auto;
     max-width: 1280px;
     margin: 0 176px;
 
     &__linear-grad {
       width: 926px;
-      height: auto;
       background: linear-gradient(
         180deg,
         #fafafa 7.7rem,
@@ -209,9 +196,7 @@
     }
 
     &__text-block {
-      position: relative;
       width: 926px;
-      background-color: #fafafa;
       margin-top: 19px;
     }
 
@@ -219,20 +204,12 @@
       padding-top: 47px;
       padding-bottom: 39px;
       width: 90%;
-      text-align: center;
       @include font-properties($ff-base, 500, $fs-alt, 186%, 0.04em);
     }
 
     &__text::before {
-      width: 54px;
-      height: 40px;
-      display: flex;
       left: 7px;
       top: 33px;
-      position: absolute;
-      content: '';
-      background-image: url('/src/images/qutes.png');
-      opacity: 0.5;
     }
 
     &__reviewier-data {
@@ -241,9 +218,6 @@
 
     &__navigation {
       margin-top: 35px;
-      display: flex;
-      justify-content: center;
-      gap: 18px;
     }
   }
 }
