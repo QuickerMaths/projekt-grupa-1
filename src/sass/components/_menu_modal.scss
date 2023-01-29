@@ -1,6 +1,5 @@
-.menu-modal {
+.menu-container {
   position: fixed;
-  inset: right;
   top: 0px;
   right: 0px;
   width: 250px;
@@ -15,12 +14,19 @@
   flex-direction: column;
   justify-content: space-around;
   pointer-events: none;
+  z-index: 10;
 
   &.is-open {
     transform: translateX(0);
     visibility: visible;
     opacity: 1;
     pointer-events: all;
+  }
+}
+
+.button {
+  &__close {
+    fill: #fff;
   }
 }
 
@@ -54,7 +60,7 @@
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 18px;
     color: $white;
   }
