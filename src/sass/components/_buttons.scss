@@ -1,10 +1,10 @@
 .btn {
   font-family: 'DM Sans';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
 
   &__buy-now {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
     width: 160px;
     height: 44px;
     background: $white;
@@ -20,6 +20,9 @@
 
   &__menu {
     width: 209px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
     height: 44px;
     background: $white;
     border-radius: 22px;
@@ -37,11 +40,12 @@
     font-weight: 400;
     line-height: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    border-radius: 20px;
 
     &--products {
-      width: 61.2px;
+      width: 62px;
       background: $blueberry-lemonade;
-      border-radius: 20px;
       color: $white;
 
       &:hover {
@@ -49,8 +53,7 @@
       }
     }
     &--howmade {
-      border-radius: 20px;
-      width: 82, 8px;
+      width: 83px;
       background: $white;
       color: $blueberry-lemonade;
 
@@ -67,6 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
 
   &__read-more {
@@ -87,6 +91,9 @@
   }
 
   &__contact {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
     width: 161px;
     height: 44px;
     border-radius: 22px;
