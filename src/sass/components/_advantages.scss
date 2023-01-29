@@ -1,0 +1,125 @@
+.advantages{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:$sea-salt-sherbet;
+    padding-top: 39px;
+    padding-bottom: 97px;
+
+&__item{
+    font-family:$ff-alt;
+    color:$blueberry-lemonade;
+    width:calc(100% - 40px);
+    padding-bottom: 72px;
+}
+
+&__label{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 16px;
+    line-height: 1.145;
+    margin-bottom: 15px;
+    font-size:3.6rem;
+    font-family: $ff-alt;
+    color:$blueberry-lemonade;
+}
+
+&__description{
+    font-weight:700;
+    font-size: 1.2rem;
+    font-family: $ff-base;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    letter-spacing: 0.4;
+    line-height: 1.7rem;
+    padding-right: 30px;
+}
+
+&__container{
+    display: flex;
+    width:33px;
+    height: 50px;
+ &--milk{
+         &::before{
+             content: "";
+             position: absolute;
+             background: url("/src/images/_advantages/icon1.png") no-repeat center center/cover;
+             width:33px;
+             height: 50px;
+ }}
+ &--fruit{
+     &::before{
+         content: "";
+         position: absolute;
+         background: url("/src/images/_advantages/icon2.png")no-repeat center center/cover;
+         width:55px;
+         height: 50px;
+}}
+&--ice{
+ &::before{
+     content: "";
+     position: absolute;
+     background: url("/src/images/_advantages/icon3.png") no-repeat center center/cover;
+     width:44px;
+     height: 50px;
+}}
+}
+}
+
+@media screen and (min-width: 786px){
+    .advantages{
+        flex-direction: row;
+        column-gap: 30px;
+        align-items: center;
+        justify-content:space-between;
+        padding-top: 66px;
+         padding-left: 36px;
+         padding-right: 76px;
+
+
+    
+    &__item{
+        font-family:$ff-alt;
+        color:$blueberry-lemonade;
+        margin-bottom: 140px;
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+    }
+    
+    &__label{
+        margin-top: 36px;
+        margin-bottom: 13px;
+        font-size:5.6rem;
+    }
+    
+    &__description{
+        font-size: 1.4rem;
+    }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .advantages{
+         padding-left: 115px;
+         padding-right: 115px;
+         padding-bottom:139px;
+         margin-bottom: 0;
+   
+    &__label{
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-size:5.6rem;
+    }
+    
+    &__description{
+        font-size: 1.6rem;
+    }
+    }
+}
+
