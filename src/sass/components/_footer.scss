@@ -1,11 +1,15 @@
 .footer {
+  padding: 0px 20px;
   background-color: $sea-salt-sherbet;
   font-family: Titan One, sans-serif;
   font-size: $fs-alt;
 
+  flex-wrap: wrap;
+  justify-content: center;
+  display: grid;
+
   &__left-side {
     text-align: left;
-
     text-transform: uppercase;
   }
 
@@ -14,13 +18,13 @@
     height: 42px;
     color: $amelies-tutu;
     margin: 0px;
-    font-size: 18px;
+    font-size: $fs-h2-mob;
     margin-bottom: 17px;
   }
 
   &__head {
     width: 200px;
-    height: 76px;
+    font-size: $fs-h3-mob;
     color: $blueberry-lemonade;
     margin: 0px;
   }
@@ -30,8 +34,7 @@
   }
 
   &__phone {
-    font-size: 13px;
-    font-weight: $fw;
+    font-size: $fs-base;
     margin: 0px;
     margin-top: 46px;
     text-align: right;
@@ -43,6 +46,7 @@
     text-decoration: none;
   }
 }
+
 .social-list {
   list-style: none;
   display: flex;
@@ -57,5 +61,31 @@
     border-radius: 50%;
     width: 32px;
     height: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    padding: 0px 36px;
+
+    &__left-side {
+      margin-right: 92px;
+    }
+
+    &__head {
+      font-size: $fs-h3-tab;
+    }
+
+    &__right-side {
+      margin-top: 0px;
+    }
+
+    &__paragraf {
+      font-size: $fs-h2-tab;
+    }
+  }
+  .social-list {
+    justify-content: right;
+    width: auto;
   }
 }
