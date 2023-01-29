@@ -4,6 +4,7 @@
   font-size: 1.6rem;
   line-height: 1.3125;
   border: none;
+  cursor: pointer;
 
   &__buy-now {
     padding-inline: 44px;
@@ -72,7 +73,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
   }
 
   &__read-more {
@@ -148,6 +148,7 @@
   display: flex;
   justify-content: center;
   padding-top: 60px;
+  cursor: pointer;
 
   &__btn {
     background-color: $white;
