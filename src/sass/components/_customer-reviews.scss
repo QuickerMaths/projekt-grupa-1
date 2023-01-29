@@ -1,5 +1,7 @@
+//mobile
 .container-reviews {
-  margin: 0 2rem;
+  max-width: 320px;
+  margin: 0 20px;
   height: 100%;
 
   &__img {
@@ -8,14 +10,15 @@
   }
 
   &__text-block {
+    position: relative;
     background-color: #fafafa;
     margin: 0 auto;
-    margin-top: 2.9rem;
+    margin-top: 29px;
   }
 
   &__linear-grad {
     margin: 0 auto;
-    width: 18rem;
+    width: 180px;
     background: linear-gradient(
       180deg,
       #fafafa 8rem,
@@ -52,37 +55,43 @@
       #fafafa 32.7rem
     );
   }
+
   &__text {
-    position: relative;
     @include font-properties($ff-base, 500, $fs-base, 255%, 0.01em);
-    width: 15.7rem;
-    padding-top: 4.7rem;
+    width: 157px;
+    padding-top: 47px;
     margin: 0 auto;
     text-align: center;
   }
 
-  &__quotes-img {
+  &__text::before {
+    width: 54px;
+    height: 40px;
+    display: flex;
+    left: 65px;
+    top: 33px;
     position: absolute;
-    left: 11rem;
-    top: 15rem;
+    content: '';
+    background-image: url('/src/images/qutes.png');
+    opacity: 0.5;
   }
 
   &__points-block {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 3rem;
+    gap: 10px;
+    margin-top: 30px;
   }
 
   &__point {
-    width: 0.4rem;
-    height: 0.4rem;
+    width: 4px;
+    height: 4px;
     border-radius: 50%;
     background-color: $blueberry-lemonade;
   }
 
   &__reviewier-data-block {
-    margin-top: 1.8rem;
+    margin-top: 18px;
     text-align: center;
   }
 
@@ -91,10 +100,10 @@
   }
 
   &__navigation {
-    margin-top: 3rem;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-    gap: 1.8rem;
+    gap: 18px;
   }
 
   &__icon-home {
@@ -102,16 +111,113 @@
   }
 
   &__nav-sec-rev {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: $bgreview-grey;
   }
 
   &__nav-third-rev {
     border-radius: 50%;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 12px;
+    height: 12px;
     background-color: $bgreview-grey;
+  }
+}
+
+//tablet
+@media screen and (min-width: 768px) {
+  .container-reviews {
+    max-width: 768px;
+    margin: 0 74px;
+
+    &__text-block {
+      width: 620px;
+      margin-top: 19px;
+    }
+
+    &__linear-grad {
+      width: 580px;
+      height: auto;
+      background: linear-gradient(
+        180deg,
+        #fafafa 7.7rem,
+        #e1e1e1 7.7rem,
+        #fafafa 7.9rem,
+        #fafafa 7.9rem,
+        #fafafa 11.5rem,
+        #e1e1e1 11.5rem,
+        #fafafa 11.7rem,
+        #fafafa 11.7rem,
+        #fafafa 14.7rem,
+        #e1e1e1 14.7rem,
+        #fafafa 14.9rem,
+        #fafafa 14.9rem
+      );
+    }
+
+    &__text {
+      padding-top: 47px;
+      padding-bottom: 34px;
+      width: 95%;
+      @include font-properties($ff-base, 500, $fs-alt, 216%, 0.04em);
+    }
+
+    &__text::before {
+      left: 7px;
+      top: 33px;
+    }
+
+    &__reviewier-data {
+      @include font-properties($ff-base, 500, $fs-alt, 186%, 0.01em);
+    }
+  }
+}
+
+//Desktop
+@media screen and (min-width: 1280px) {
+  .container-reviews {
+    max-width: 1280px;
+    margin: 0 176px;
+
+    &__linear-grad {
+      width: 926px;
+      background: linear-gradient(
+        180deg,
+        #fafafa 7.7rem,
+        #e1e1e1 7.7rem,
+        #fafafa 7.9rem,
+        #fafafa 7.9rem,
+        #fafafa 10.5rem,
+        #e1e1e1 10.5rem,
+        #fafafa 10.7rem,
+        #fafafa 10.7rem
+      );
+    }
+
+    &__text-block {
+      width: 926px;
+      margin-top: 19px;
+    }
+
+    &__text {
+      padding-top: 47px;
+      padding-bottom: 39px;
+      width: 90%;
+      @include font-properties($ff-base, 500, $fs-alt, 186%, 0.04em);
+    }
+
+    &__text::before {
+      left: 7px;
+      top: 33px;
+    }
+
+    &__reviewier-data {
+      @include font-properties($ff-base, 500, $fs-alt, 186%, 0.01em);
+    }
+
+    &__navigation {
+      margin-top: 35px;
+    }
   }
 }
