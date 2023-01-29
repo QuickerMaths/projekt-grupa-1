@@ -1,0 +1,19 @@
+.advantages{
+    display:flex;
+    flex-direction: column;
+    width:calc(100% - 20px);
+    align-items: center;
+    justify-content: center;
+    background-color:$sea-salt-sherbet;
+    margin-top: 105px;
+    margin-bottom: 97px;
+&__item{
+    font-family:$ff-alt;
+    color:$blueberry-lemonade;
+}
+&__description{
+    font-family:$ff-base;
+    color: black;
+
+}
+}
