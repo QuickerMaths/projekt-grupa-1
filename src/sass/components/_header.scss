@@ -1,13 +1,14 @@
 .header {
   background-color: $rosie;
   padding-inline: 20px;
-  z-index: -10;
+  z-index: 0;
   overflow-x: hidden;
 
   position: relative;
-  &__mobile-menu {
+  &__nav-bar {
     display: flex;
-    padding-top: 0.6rem;
+    align-items: flex-end;
+    padding-top: 6px;
   }
   &__logo {
     max-width: 199px;
@@ -19,7 +20,7 @@
     fill: $blueberry-lemonade;
   }
   &__slogan {
-    padding-block: 13.7rem 16rem;
+    padding-block: 137px 160px;
   }
   &__heading {
     font-family: $ff-alt;
@@ -31,8 +32,9 @@
     text-transform: uppercase;
     color: $white;
 
-    max-width: 21.8rem;
-    margin-bottom: 1.9rem;
+    max-width: 218px;
+    margin-bottom: 19px;
+    z-index: 3;
   }
   &__heading--accent {
     font-family: $ff-alt;
@@ -56,7 +58,7 @@
     position: absolute;
     right: 10vw;
     bottom: 75px;
-    z-index: -2;
+    z-index: -1;
     transform: translateX(30%);
 
     width: 344px;
