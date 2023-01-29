@@ -1,12 +1,12 @@
 .btn {
   font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.3125;
+  border: none;
 
   &__buy-now {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    width: 160px;
-    height: 44px;
+    padding-inline: 44px;
     background: $white;
     border-radius: 22px;
     color: $blueberry-lemonade;
@@ -35,16 +35,15 @@
   }
 
   &__header {
-    height: 24px;
     font-size: 8px;
+    line-height: 1.25;
     font-weight: 400;
-    line-height: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
     border-radius: 20px;
 
     &--products {
-      width: 62px;
+      padding: 8px 15px;
       background: $blueberry-lemonade;
       color: $white;
 
@@ -53,9 +52,13 @@
       }
     }
     &--howmade {
-      width: 83px;
+      border-radius: 20px;
+      line-height: 1.25;
+      padding: 8px 15px;
       background: $white;
       color: $blueberry-lemonade;
+
+      margin-left: 8px;
 
       &:hover {
         background-color: $hover-background;
