@@ -140,6 +140,14 @@
     }
   }
 }
+@media screen and (min-width: 1280px) {
+  .btn {
+    &__contact {
+      width: 198px;
+      height: 44px;
+    }
+  }
+}
 
 // Menu modal buttons
 
