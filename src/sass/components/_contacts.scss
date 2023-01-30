@@ -240,13 +240,13 @@
     padding-top: 132px;
     padding-bottom: 165px;
 
-    background-image: linear-gradient(to bottom, $white 234px, $sea-salt-sherbet 234px),
-      url(/src/images/contacts/contactsbg.png);
-
-    background-size: 100vw, 100vw;
-    background-position: top 100px, top 100px;
-    background-repeat: no-repeat, no-repeat;
-
+    background: linear-gradient(to bottom, $white 234px, $sea-salt-sherbet 234px);
+    &__container {
+      background-image: url(/src/images/contacts/contactsbg.png);
+      background-size: 100vw;
+      background-position: top 100px center;
+      background-repeat: no-repeat;
+    }
     &__card-list {
       flex-wrap: nowrap;
       gap: 30px;
