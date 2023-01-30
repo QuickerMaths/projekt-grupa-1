@@ -1,0 +1,199 @@
+.contacts {
+  background-image: linear-gradient(to bottom, $white 11%, $sea-salt-sherbet 11%);
+  padding-top: 132px;
+  padding-bottom: 30px;
+  //do wykasowania przy łączeniu z footer
+
+  &__sectiontitle {
+    display: none;
+  }
+
+  &__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__list-item {
+    background: $white;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 43px 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  &__list-item:last-child {
+    margin-bottom: 54px;
+  }
+
+  &__title-cafe {
+    background: $amber-moon;
+    border-radius: 4px;
+    width: 80px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: $ff-base;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: $white;
+
+    margin-bottom: 25px;
+  }
+
+  &__title-foodtruck {
+    background: $lickety-split;
+    border-radius: 4px;
+    width: 130px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: $ff-base;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: $white;
+
+    margin-bottom: 25px;
+  }
+  &__city {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 186%;
+
+    padding-bottom: 10px;
+  }
+
+  &__description {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: $gypsy-magic;
+  }
+  &__separation-line {
+    border: 1px solid $jupiter;
+    margin: 25px 0px;
+  }
+  &__days {
+    font-family: $ff-base;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 186%;
+  }
+  &__time {
+    font-family: $ff-base;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 186%;
+    color: $amelies-tutu;
+  }
+
+  &__address {
+    font-style: normal;
+  }
+  &__address-link {
+    display: block;
+    text-decoration: none;
+    color: $gypsy-magic;
+    font-family: $ff-base;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 150%;
+  }
+
+  &__icon--white {
+    fill: none;
+    stroke: $white;
+    margin-left: 8px;
+  }
+
+  &__icon--pink {
+    fill: none;
+    stroke: $blueberry-lemonade;
+    margin-left: 8px;
+  }
+
+  &__btn-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* ---------- END RESPONSIVE TABLET ---------- */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contacts {
+    &__card-list {
+      flex-wrap: nowrap;
+      gap: 10px;
+      justify-content: center;
+      margin-left: 36px;
+      margin-right: 36px;
+    }
+    &__list-item {
+      margin-bottom: 81px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__list-item:last-child {
+      margin-bottom: 81px;
+    }
+    &__btn-list {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+}
+
+/* ---------- END RESPONSIVE TABLET ---------- */
+
+/* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    background-image: linear-gradient(to bottom, $white 25%, $sea-salt-sherbet 25%);
+    // , url(../../images/contacts/contactsbg.png)
+  }
+
+  .contacts {
+    &__card-list {
+      flex-wrap: nowrap;
+      gap: 31px;
+      justify-content: center;
+      margin-left: 115px;
+      margin-right: 115px;
+    }
+    &__list-item {
+      margin-bottom: 86px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__list-item:last-child {
+      margin-bottom: 86px;
+    }
+    &__btn-list {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+}
+/* ---------- END RESPONSIVE DESKTOP ---------- */
