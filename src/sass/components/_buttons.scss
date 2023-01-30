@@ -7,11 +7,9 @@
   cursor: pointer;
 
   &__buy-now {
-    padding-inline: 44px;
     background: $white;
     border-radius: 22px;
     color: $blueberry-lemonade;
-    display: none;
 
     &:hover {
       background-color: $hover-background;
@@ -175,5 +173,5 @@
   position: absolute;
   top: 24px;
   right: 34px;
-  fill: $white;
+  color: $white;
 }
