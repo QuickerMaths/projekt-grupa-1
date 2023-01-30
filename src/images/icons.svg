@@ -7,5 +7,7 @@
 <symbol id="icon-Burger" viewBox="0 0 32 32"><path stroke-width="1.6" d="M0 6.4h32M0 16h32M0 25.6h32"/></symbol>
 <symbol id="icon-home-1" viewBox="0 0 32 32"><path d="M31.618 15.643c.553-.608.5-1.541-.119-2.082L17.863 1.63c-.619-.541-1.611-.53-2.217.026L1.964 14.198a1.446 1.446 0 0 0-.066 2.079l.343.357c.569.592 1.489.663 2.053.157l1.023-.916v13.406c0 .823.666 1.488 1.488 1.488h5.333c.822 0 1.488-.666 1.488-1.488v-9.379h6.803v9.379c-.012.822.576 1.488 1.398 1.488h5.652c.822 0 1.488-.666 1.488-1.488V16.064l.631.554c.349.307 1.078.061 1.631-.548l.388-.426z"/></symbol>
 <symbol id="icon-Ellipse-5-2" viewBox="0 0 32 32"><path d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/></symbol>
-<symbol id="icon-Vector-1" viewBox="0 0 32 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="6.4" d="M9.6 3.2 22.4 16 9.6 28.8"/></symbol>
+<symbol id="icon-vector1" viewBox="0 0 26 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
+</symbol>
 <symbol id="icon-arrow-right2" viewBox="0 0 32 32"><path d="m19.414 27.414 10-10a2 2 0 0 0 0-2.828l-10-10a2 2 0 1 0-2.828 2.828L23.172 14H4a2 2 0 1 0 0 4h19.172l-6.586 6.586c-.39.39-.586.902-.586 1.414s.195 1.024.586 1.414a2 2 0 0 0 2.828 0z"/></symbol></defs></svg>
