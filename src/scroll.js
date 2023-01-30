@@ -1,3 +1,5 @@
+// Header
+
 const logo = document.querySelector('.header__logo');
 const headerTitle = document.querySelector('.header__heading');
 const buttonHeaderHowMade = document.querySelector('.btn__header--howmade');
@@ -29,7 +31,6 @@ const advantagesLabelThird = document.querySelector('.advantages__label.third');
 // Contacts
 
 const contactsCardOne = document.querySelector('.contacts__list-item.one');
-const contactsCardTwo = document.querySelector('.contacts__list-item.two');
 const contactsCardThree = document.querySelector('.contacts__list-item.three');
 
 // Options
@@ -46,12 +47,16 @@ const optionsProducts = {
   rootMargin: '110px',
 };
 
+// Queries
+const mobile = window.matchMedia('(max-width: 767px)');
+const tablet = window.matchMedia('(min-width: 768px) and (max-width:1199px)');
+const desktop = window.matchMedia('(min-width: 1200px)');
 // single use
 
-function scrollAnimate(element, animationType, optionsType) {
+function scrollAnimate(element, animationType, optionsType, mediaQueries) {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && mediaQueries.matches) {
         element.classList.add(`${animationType}`);
 
         observer.unobserve(element);
@@ -61,55 +66,37 @@ function scrollAnimate(element, animationType, optionsType) {
   observer.observe(element);
 }
 
-// single element function multiUse
-
-// function scrollAnimate(element, animationType, optionsType, delayTime) {
-//   const observer = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//       if (entry.isIntersecting) {
-//         setTimeout(() => {
-//           element.classList.add(`${animationType}`);
-//         }, delayTime);
-//       } else {
-//         element.classList.remove(`${animationType}`);
-//       }
-//     });
-//   }, optionsType);
-//   observer.observe(element);
-// }
-
 // Header
 
-scrollAnimate(logo, 'fade-in-down', options);
-scrollAnimate(headerTitle, 'scale', options);
-scrollAnimate(buttonHeaderHowMade, 'scale', options);
-scrollAnimate(buttonHeaderProducts, 'scale', options);
+scrollAnimate(logo, 'fade-in-down', options, mobile);
+scrollAnimate(headerTitle, 'scale', options, mobile);
+scrollAnimate(buttonHeaderHowMade, 'scale', options, mobile);
+scrollAnimate(buttonHeaderProducts, 'scale', options, mobile);
 
 // Products
 
-scrollAnimate(labelProducts, 'fade-in-top', options);
-scrollAnimate(titleProducts, 'scale-two-seconds-delay', options);
-scrollAnimate(pinkCard, 'fade-in-down', optionsProducts);
-scrollAnimate(beigeCard, 'fade-in-down-second-delay', optionsProducts);
-scrollAnimate(greenCard, 'fade-in-down-two-seconds-delay', optionsProducts);
+scrollAnimate(labelProducts, 'fade-in-top', options, mobile);
+scrollAnimate(titleProducts, 'scale-two-seconds-delay', options, mobile);
+scrollAnimate(pinkCard, 'fade-in-down', optionsProducts, mobile);
+scrollAnimate(beigeCard, 'fade-in-down-second-delay', optionsProducts, mobile);
+scrollAnimate(greenCard, 'fade-in-down-two-seconds-delay', optionsProducts, mobile);
 
 // About
 
-scrollAnimate(aboutTitleOne, 'fade-in-top', options);
-scrollAnimate(aboutTitleTwo, 'fade-in-down', options);
-scrollAnimate(aboutImage, 'scale-opacity', options);
+scrollAnimate(aboutTitleOne, 'fade-in-top', options, mobile);
+scrollAnimate(aboutTitleTwo, 'fade-in-down', options, mobile);
+scrollAnimate(aboutImage, 'scale-opacity', options, mobile);
 
 // Advantages
 
-scrollAnimate(advantagesMilk, 'fade-in-top-200', options);
-scrollAnimate(advantagesFruit, 'fade-in-top-200-second-delay', options);
-scrollAnimate(advantagesIce, 'fade-in-top-200-two-seconds-delay', options);
-scrollAnimate(advantagesLabelFirst, 'scale-two-seconds-delay', options);
-scrollAnimate(advantagesLabelSecond, 'scale-three-seconds-delay', options);
-scrollAnimate(advantagesLabelThird, 'scale-four-seconds-delay', options);
+scrollAnimate(advantagesMilk, 'fade-in-top-200', options, mobile);
+scrollAnimate(advantagesFruit, 'fade-in-top-200-second-delay', options, mobile);
+scrollAnimate(advantagesIce, 'fade-in-top-200-two-seconds-delay', options, mobile);
+scrollAnimate(advantagesLabelFirst, 'scale-two-seconds-delay', options, mobile);
+scrollAnimate(advantagesLabelSecond, 'scale-three-seconds-delay', options, mobile);
+scrollAnimate(advantagesLabelThird, 'scale-four-seconds-delay', options, mobile);
 
 // Contacts
 
-scrollAnimate(contactsCardOne, 'contact-card-one-animation', options);
-scrollAnimate(contactsCardTwo, 'contact-card-two-animation', options);
-scrollAnimate(contactsCardThree, 'contact-card-three-animation', options);
+scrollAnimate(contactsCardOne, 'contact-card-one-animation', options, tablet);
+scrollAnimate(contactsCardThree, 'contact-card-three-animation', options, tablet);

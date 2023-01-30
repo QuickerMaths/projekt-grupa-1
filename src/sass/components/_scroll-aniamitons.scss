@@ -237,29 +237,11 @@
 
 @keyframes contact-card-one-animation {
   0% {
-    transform: translateX(110%) translateY(75%);
+    transform: translateX(110%);
   }
-  50% {
-    transform: translateX(110%) translateY(37.5%);
-  }
-  100% {
-    transform: translateX(0%) translateY(0%);
-  }
-}
 
-.contact-card-two-animation {
-  animation: contact-card-two-animation 3s;
-}
-
-@keyframes contact-card-two-animation {
-  0% {
-    transform: translateY(75%);
-  }
-  50% {
-    transform: translateY(37.5%);
-  }
   100% {
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 }
 
@@ -269,12 +251,10 @@
 
 @keyframes contact-card-three-animation {
   0% {
-    transform: translateX(-110%) translateY(75%);
+    transform: translateX(-110%);
   }
-  50% {
-    transform: translateX(-110%) translateY(37.5%);
-  }
+
   100% {
-    transform: translateX(0%) translateY(0%);
+    transform: translateX(0%);
   }
 }
