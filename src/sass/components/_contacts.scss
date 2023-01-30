@@ -241,11 +241,12 @@
     padding-top: 132px;
     padding-bottom: 165px;
 
-    background-color: linear-gradient(to bottom, $white 234px, $sea-salt-sherbet 234px);
-    // background-image: url(/src/images/contacts/contactsbg.png);
-    background-size: 100vw;
-    background-position: top 100px;
-    background-repeat: no-repeat;
+    background-image: url(/src/images/contacts/contactsbg.png),
+      linear-gradient(to bottom, $white 234px, $sea-salt-sherbet 234px);
+
+    background-size: 100vw, 100vw;
+    background-position: top 100px, top 100px;
+    background-repeat: no-repeat, no-repeat;
   }
 
   .contacts {

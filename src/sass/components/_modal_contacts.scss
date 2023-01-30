@@ -1,11 +1,11 @@
-.is-hidden {
+.modal-contacts__is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
   transform: translate(-50%, -50%) scale(0.4);
 }
 
-.backdrop {
+.modal-contacts__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,11 +16,11 @@
   align-items: center;
   background-color: #00000033;
 }
-.backdrop.is-hidden .modal {
+.modal-contacts__backdrop.modal-contacts__is-hidden .modal-contacts__ {
   transform: scale(0);
 }
 
-.modal {
+.modal-contacts {
   position: relative;
   width: calc(100vw - 30px);
   max-width: 450px;
