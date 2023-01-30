@@ -7,7 +7,7 @@
   position: relative;
   &__nav-bar {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     padding-top: 6px;
   }
   &__logo {
@@ -18,6 +18,9 @@
     border: none;
     background-color: transparent;
     fill: $blueberry-lemonade;
+  }
+  &__btn {
+    display: none;
   }
   &__slogan {
     padding-block: 137px 160px;
@@ -66,5 +69,121 @@
     border-radius: 50%;
 
     background-color: $amelies-tutu;
+  }
+  &__slider {
+    display: none;
+    align-items: flex-end;
+    gap: 30px;
+    margin-top: 19px;
+  }
+  &__text-container {
+    display: flex;
+  }
+  &__text {
+    font-size: 0.8rem;
+    line-height: 140%;
+    color: $white;
+
+    max-width: 114px;
+  }
+  &__arrow {
+    padding: 5px;
+    margin-top: 7px;
+  }
+  &__grid-right {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-inline: 34px;
+    &__grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+    &__grid-center {
+      position: relative;
+    }
+    &__grid-right {
+      display: block;
+      position: relative;
+      text-align: right;
+    }
+    &__bg-img {
+      max-width: 143px;
+      bottom: 0;
+      left: 0;
+    }
+    &__circle {
+      max-width: 324px;
+      max-height: 324px;
+
+      bottom: 46px;
+      left: 0;
+
+      transform: translateX(-20%);
+    }
+    &__numbers {
+      font-family: 'Titan One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 32px;
+
+      text-align: right;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+
+      color: #d41443;
+      margin-top: 12px;
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        background-color: $white;
+
+        position: absolute;
+        top: 0;
+        right: -10px;
+        z-index: -1;
+      }
+    }
+    &__info {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 10px;
+      text-align: right;
+
+      color: #ffffff;
+    }
+    &__bg-tasty {
+      position: absolute;
+      bottom: 0;
+    }
+    &__nav-bar {
+      padding-top: 37px;
+    }
+    &__slogan {
+      padding-block: 15px 28px;
+    }
+    &__btn {
+      display: block;
+      padding: 12px 35px;
+      margin-left: 30px;
+      &-icon {
+        fill: $blueberry-lemonade;
+        stroke: none;
+        margin-left: 12px;
+      }
+    }
+    &__slider {
+      display: flex;
+    }
   }
 }
