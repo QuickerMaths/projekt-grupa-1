@@ -217,7 +217,8 @@
     z-index: -1;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     transform: translateX(0%);
   }
 
