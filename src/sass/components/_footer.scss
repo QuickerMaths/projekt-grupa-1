@@ -121,3 +121,16 @@
     width: auto;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__paragraf {
+      width: 472px;
+    }
+
+    &__head {
+      width: 474px;
+      font-size: $fs-h3-desk;
+    }
+  }
+}
