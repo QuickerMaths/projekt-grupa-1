@@ -1,3 +1,56 @@
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 .btn {
   font-family: 'DM Sans';
   font-weight: 700;
@@ -6,10 +59,21 @@
   border: none;
   cursor: pointer;
 
+  &:hover {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
   &__buy-now {
     background: $white;
     border-radius: 1.375rem;
     color: $blueberry-lemonade;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
 
     &:hover {
       background-color: $hover-background;
@@ -109,7 +173,7 @@
       color: $white;
 
       &:hover {
-        background-color: $hover-background-red;
+        background-color: $hover-red;
       }
     }
 
@@ -146,8 +210,7 @@
 .button {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
-  cursor: pointer;
+  margin-top: 60px;
 
   &__btn {
     background-color: $white;
@@ -159,6 +222,7 @@
     line-height: 21px;
     width: 209px;
     height: 44px;
+    cursor: pointer;
   }
 
   &__vector {
@@ -175,4 +239,13 @@
   top: 24px;
   right: 34px;
   color: $white;
+}
+
+//tablet
+@media screen and (min-width: 768px) {
+  .btn {
+    &__buy-now {
+      display: block;
+    }
+  }
 }
