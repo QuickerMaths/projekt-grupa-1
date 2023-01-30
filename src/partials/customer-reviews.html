@@ -7,53 +7,111 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="container-reviews">
-      <div class="container-reviews__img">
-        <img
-          width="85"
-          height="85"
-          alt="uśmiechnięta dziewczyna z kręconymi włosami"
-          src="images/reviewer1.jpg"
-          srcset="
-            images/reviewer1@2x.jpg 300w,
-            images/reviewer1@3x.jpg 768w,
-            images/reviewer2@2x.jpg 300w,
-            images/reviewer2@3x.jpg 768w,
-            images/reviewer3@2x.jpg 300w,
-            images/reviewer3@3x.jpg 768w
-          "
-          sizes="(min-width: 1200px) 1062px, (min-width: 768px) 708px, 100vw"
-          alt="uśmiechnięta dziewczyna z kręconymi włosami"
-        />
-      </div>
-      <div class="container-reviews__text-block">
-        <div class="container-reviews__linear-grad">
-          <p class="container-reviews__text">
-            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-          </p>
+    <div class="swiper reviews-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <section class="container-reviews">
+            <div class="container-reviews__img">
+              <img
+                width="85"
+                height="85"
+                alt="uśmiechnięta dziewczyna z kręconymi włosami"
+                src="images/reviewer1.jpg"
+                srcset="images/reviewer1@2x.jpg 300w, images/reviewer1@3x.jpg 768w"
+                sizes="(min-width: 1200px) 1062px, (min-width: 768px) 708px, 100vw"
+                alt="uśmiechnięta dziewczyna z kręconymi włosami"
+              />
+            </div>
+            <div class="container-reviews__text-block">
+              <div class="container-reviews__linear-grad">
+                <p class="container-reviews__text">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                  hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </div>
+            </div>
+
+            <ul class="container-reviews__points-block">
+              <li class="container-reviews__point"></li>
+              <li class="container-reviews__point"></li>
+              <li class="container-reviews__point"></li>
+            </ul>
+
+            <div class="container-reviews__reviewier-data-block">
+              <p class="container-reviews__reviewier-data">Emily, Los Angeles</p>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-reviews">
+            <div class="container-reviews__img">
+              <img
+                width="85"
+                height="85"
+                alt="uśmiechnięta dziewczyna z kręconymi włosami"
+                src="images/reviewer2.jpg"
+                srcset="images/reviewer2@2x.jpg 300w, images/reviewer2@3x.jpg 768w"
+                sizes="(min-width: 1200px) 1062px, (min-width: 768px) 708px, 100vw"
+                alt="uśmiechnięta dziewczyna z kręconymi włosami"
+              />
+            </div>
+            <div class="container-reviews__text-block">
+              <div class="container-reviews__linear-grad">
+                <p class="container-reviews__text">
+                  If you are going through hell, keep going. Never, never, never give up. Time and
+                  money are largely interchangeable terms. Personally I'm always ready to learn,
+                  although I do not always like being taught.
+                </p>
+              </div>
+            </div>
+
+            <ul class="container-reviews__points-block">
+              <li class="container-reviews__point"></li>
+              <li class="container-reviews__point"></li>
+              <li class="container-reviews__point"></li>
+            </ul>
+
+            <div class="container-reviews__reviewier-data-block">
+              <p class="container-reviews__reviewier-data">Jane, London</p>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="container-reviews">
+            <div class="container-reviews__img">
+              <img
+                width="85"
+                height="85"
+                alt="uśmiechnięta dziewczyna z kręconymi włosami"
+                src="images/reviewer3.jpg"
+                srcset="images/reviewer3@2x.jpg 300w, images/reviewer3@3x.jpg 768w"
+                sizes="(min-width: 1200px) 1062px, (min-width: 768px) 708px, 100vw"
+                alt="uśmiechnięta dziewczyna z kręconymi włosami"
+              />
+            </div>
+            <div class="container-reviews__text-block">
+              <div class="container-reviews__linear-grad">
+                <p class="container-reviews__text">
+                  Where ignorance is our master, there is no possibility of real peace." "The way to
+                  change other's minds is with affection and not anger." "Remember that sometimes
+                  not getting what you want is a wonderful stroke of luck.
+                </p>
+              </div>
+            </div>
+
+            <ul class="container-reviews__points-block">
+              <li class="container-reviews__point"></li>
+              <li class="container-reviews__point"></li>
+              <li class="container-reviews__point"></li>
+            </ul>
+
+            <div class="container-reviews__reviewier-data-block">
+              <p class="container-reviews__reviewier-data">Mily, Tibet</p>
+            </div>
+          </section>
         </div>
       </div>
-
-      <ul class="container-reviews__points-block">
-        <li class="container-reviews__point"></li>
-        <li class="container-reviews__point"></li>
-        <li class="container-reviews__point"></li>
-      </ul>
-
-      <div class="container-reviews__reviewier-data-block">
-        <p class="container-reviews__reviewier-data">Emily, Los Angeles</p>
-      </div>
-
-      <ul class="container-reviews__navigation">
-        <li class="container-reviews__nav-home">
-          <svg class="container-reviews__icon-home" width="12" height="12">
-            <use href="/src/images/icons.svg#icon-home-1"></use>
-          </svg>
-        </li>
-        <li class="container-reviews__nav-sec-rev"></li>
-        <li class="container-reviews__nav-third-rev"></li>
-      </ul>
-    </section>
+      <div class="swiper-pagination"></div>
+    </div>
   </body>
 </html>
