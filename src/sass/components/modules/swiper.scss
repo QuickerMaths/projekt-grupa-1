@@ -26,6 +26,26 @@
     --swiper-theme-color: #{$themeColor};
   }
 }
+
+.swiper {
+  margin: 0 auto;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  //opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background-image: url('../images/home-1.svg');
+  background-size: 15px, cover;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 14px;
+  border-radius: 0;
+}
+
 .swiper {
   margin-left: auto;
   margin-right: auto;

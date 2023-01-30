@@ -1,38 +1,21 @@
 // Imports
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Titan+One&display=swap');
+
 @import 'utils/vars';
 @import 'utils/global-style';
 @import 'src/sass/components/modules/swiper.scss';
 @import 'src/sass/components/customer-reviews';
 
-.swiper {
-  margin: 0 auto;
-  margin-top: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .swiper {
-    margin-top: 121px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .swiper {
-    margin-top: 123px;
-  }
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-}
-
-.swiper-pagination-bullet-active {
-  //opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background-image: url('../images/home-1.svg');
-  background-size: 15px, cover;
-  background-repeat: no-repeat;
-  width: 15px;
-  height: 14px;
-  border-radius: 0;
-}
+@import 'components/gallery';
+@import 'components/buttons';
+@import 'components/header';
+@import 'src/sass/components/customer-reviews';
+@import 'components/contacts';
+@import 'components/footer';
+@import 'components/about';
+@import 'components/modal_about';
+@import 'components/products';
+@import 'components/buttons';
+@import 'components/advantages';
+@import 'components/menu_modal';
