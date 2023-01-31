@@ -78,22 +78,11 @@
     font-size: 1.4rem;
     line-height: 18px;
     color: $white;
+    cursor: pointer;
     transition: transform 0.5s ease-in-out;
-  }
-}
-
-.menu a {
-  text-decoration: none;
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  color: $white;
-  cursor: pointer;
-
-  &:focus,
-  &:hover {
-    color: $blueberry-lemonade;
+    &:focus,
+    &:hover {
+      color: $blueberry-lemonade;
+    }
   }
 }
