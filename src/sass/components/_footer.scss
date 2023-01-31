@@ -69,7 +69,7 @@
 .social-list {
   margin-bottom: 46px;
   width: 150px;
-  margin-left: 127px;
+  margin-left: calc(100% - 150px);
 
   &__icon {
     cursor: pointer;
