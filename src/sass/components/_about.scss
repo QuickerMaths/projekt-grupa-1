@@ -6,7 +6,8 @@
   align-items: center;
   background-image: url(../images/about/mobile_milk@x1.png);
   background-size: 100vw;
-  background-position: center bottom 61px;
+  background-position-x: center;
+  background-position-y: bottom 61px;
   background-repeat: no-repeat;
 
   &__header1 {
@@ -164,7 +165,8 @@
       background-image: url(../images/about/desktop_milk@x1.png);
       background-size: 100vw;
       background-repeat: no-repeat;
-      background-position: center bottom -65px;
+      background-position-x: center;
+      background-position-y: 342px;
       &__header1 {
         margin-top: 125px;
         font-size: $fs-h2-desk;
