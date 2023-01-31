@@ -1,11 +1,11 @@
 .products{
-    width: 100%;
+    max-width: 400px;
     display: flex;
     margin: 0;
     padding: 0;
     flex-direction: column;
    align-items: center;
-   justify-content: center;
+   justify-items: center;
 
     &__label{
         display: flex;
@@ -125,16 +125,17 @@
         
 &__swipe{
     display: flex;
-    position: absolute;
-    margin-bottom: 30px;
+    position: relative;
+    // margin-bottom: 30px;
  
 
     &::after{
         content: "...";
-        // position: absolute;
+        position: absolute;
         color:$white;
         font-size: 20px;
-        top: 35%;
+        top: 190px;
+        left: -10px;
         margin-bottom: 30px;
         letter-spacing: 5;
 
@@ -179,6 +180,7 @@ fill:pink;
 
     @media screen and (min-width: 768px){
         .products{
+            max-width:none;
         
             &__label{
                 font-size:3rem;
@@ -246,17 +248,17 @@ fill:pink;
         }
 
 
-            &__swipe{
-                display: flex;
-                margin-bottom: 100px;
+            // &__swipe{
+            //     display: flex;
+            //     margin-bottom: 100px;
              
             
-                &::after{
-                    position: absolute;
-                    left:-20px;
-                }
+            //     &::after{
+            //         position: absolute;
+            //         left:-20px;
+            //     }
             
-            }
+            // }
 
             &__button{ 
                 margin-bottom: 50px;
