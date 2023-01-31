@@ -71,7 +71,7 @@
 }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 786px){
     .advantages{
         flex-direction: row;
         column-gap: 30px;
@@ -105,12 +105,11 @@
     }
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1200px){
     .advantages{
          padding-left: 115px;
          padding-right: 115px;
          padding-bottom:139px;
-         padding-top: 39px;
          margin-bottom: 0;
    
     &__label{

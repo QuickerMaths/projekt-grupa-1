@@ -41,45 +41,35 @@
     align-items: center;
     justify-content: flex-start;
     border-top: 1px solid $border-menu-modal;
-    padding-bottom: 1px;
-    position: relative;
-    transition: transform 0.5s ease-in-out;
-    cursor: pointer;
-
-    &:hover::before {
-      transform: scale(1);
-      transform-origin: left center;
-    }
-    &:focus .menu__text,
-    &:hover .menu__text {
-      color: $blueberry-lemonade;
-    }
 
     &:last-child {
       border-bottom: 1px solid $border-menu-modal;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 50%;
-      height: 4;
-      background-color: $white;
-      transform: scale(0);
-      transition: transform 0.5s ease-in-out;
-      transform-origin: right center;
     }
   }
 
   &__text {
     margin-left: 21px;
+    font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 18px;
     color: $white;
-    transition: transform 0.5s ease-in-out;
+  }
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: $blueberry-lemonade;
   }
 }

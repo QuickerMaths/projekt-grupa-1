@@ -91,7 +91,7 @@
   }
 
   &__reviewier-data-block {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     margin-top: 18px;
     text-align: center;
   }
@@ -181,13 +181,13 @@
 
     &__text {
       padding-top: 47px;
-
+      padding-bottom: 39px;
       width: 90%;
       @include font-properties($ff-base, 500, $fs-alt, 186%, 0.04em);
     }
 
     &__text::before {
-      left: 15px;
+      left: 7px;
       top: 33px;
     }
 
