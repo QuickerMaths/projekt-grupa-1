@@ -1,149 +1,140 @@
-.products{
-    width: 100%;
+.products {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__label {
     display: flex;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    margin-top: 121px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    font-family: $ff-alt;
+    color: $amelies-tutu;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 144px;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    font-family: $ff-alt;
+    color: $blueberry-lemonade;
+  }
+
+  &__menu {
+    width: calc(100% - 40px);
+    display: flex;
     flex-direction: column;
-   align-items: center;
-   justify-content: center;
+    list-style-type: none;
+    row-gap: 150px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 112px;
+  }
 
-    &__label{
-        display: flex;
-        align-items: center;
-        margin-top:121px;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        font-size:2.1rem;
-        font-family: $ff-alt;
-        color: $amelies-tutu;
-    }
-    
-    &__title{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 144px;
-        font-size: 3.6rem;
-        text-transform: uppercase;
-        font-family: $ff-alt;
-        color: $blueberry-lemonade;
-        
-    }
+  &__container {
+    display: flex;
+    width: 249px;
+    height: 252px;
+    position: absolute;
+    top: -28%;
 
-
-    &__menu{
-        width:calc(100% - 40px);
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        row-gap: 150px;
-       border-radius: 10px;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 112px;
-    }
-
-    &__container{
-       display: flex;
-       width:249px;
-       height: 252px;
-       position: absolute;
-       top: -28%;
-
-
-    &--pink{
-            &::before{
-                content: "";
-                position: absolute;
-                background: url("/src/images/products_img/icecreamx2_mob.png") no-repeat center center/cover;
-                width:249px;
-                height: 252px;
-    }}
-    &--beige{
-        &::before{
-            content: "";
-            position: absolute;
-            background: url("/src/images/products_img/icecoffex2_mob.png")no-repeat center center/cover;
-            width:249px;
-            height: 252px;
-}}
-&--green{
-    &::before{
-        content: "";
+    &--pink {
+      &::before {
+        content: '';
         position: absolute;
-        background: url("/src/images/products_img/milkshakex2_mob.png") no-repeat center center/cover;
-        width:249px;
+        background: url('/src/images/products_img/icecreamx2_mob.png') no-repeat center center/cover;
+        width: 249px;
         height: 252px;
-}}
+      }
+    }
+    &--beige {
+      &::before {
+        content: '';
+        position: absolute;
+        background: url('/src/images/products_img/icecoffex2_mob.png') no-repeat center center/cover;
+        width: 249px;
+        height: 252px;
+      }
+    }
+    &--green {
+      &::before {
+        content: '';
+        position: absolute;
+        background: url('/src/images/products_img/milkshakex2_mob.png') no-repeat center
+          center/cover;
+        width: 249px;
+        height: 252px;
+      }
+    }
+  }
 
-}
+  &__menu-items {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: $ff-alt;
+    padding-left: 41px;
+    padding-right: 39px;
 
-
-    &__menu-items{
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        font-family: $ff-alt;
-        padding-left: 41px;
-        padding-right: 39px;
-
-       
-
-    &--pink{
-        background-color:$rosie;
-}
-
-    
-    &--beige{
-        background-color:$amber-moon;
+    &--pink {
+      background-color: $rosie;
     }
 
-    &--green{
-        background-color:$lickety-split;
-    }}
-
-
-
-&__name{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-family: $ff-alt;
-        color: $white;
-        font-weight: 400;
-        letter-spacing: 0.4;
-        margin-top: 161px;
-        margin-bottom: 30px;
-        color: $white;
-
+    &--beige {
+      background-color: $amber-moon;
     }
-        
-&__swipe{
+
+    &--green {
+      background-color: $lickety-split;
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: $ff-alt;
+    color: $white;
+    font-weight: 400;
+    letter-spacing: 0.4;
+    margin-top: 161px;
+    margin-bottom: 30px;
+    color: $white;
+  }
+
+  &__swipe {
     display: flex;
     position: absolute;
     margin-bottom: 30px;
- 
 
-    &::after{
-        content: "...";
-        // position: absolute;
-        color:$white;
-        font-size: 20px;
-        top: 35%;
-        margin-bottom: 30px;
-        letter-spacing: 5;
-
+    &::after {
+      content: '...';
+      // position: absolute;
+      color: $white;
+      font-size: 20px;
+      top: 35%;
+      margin-bottom: 30px;
+      letter-spacing: 5;
     }
+  }
 
-}
-    
- &__menu-description{
-    font-weight:700;
+  &__menu-description {
+    font-weight: 700;
     font-size: 1.4rem;
     font-family: $ff-base;
     color: $white;
@@ -155,112 +146,209 @@
     margin-top: 30px;
     padding: 0 11px 0 11px;
     text-align: center;
+  }
 
-    
+  // btn od Tomka tu będzie, ten jest testowy
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 41px;
+    margin-top: 30px;
+  }
+  &__button-icon {
+    fill: pink;
+  }
 }
 
-// btn od Tomka tu będzie, ten jest testowy
-&__button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: #fff;
-        margin-bottom: 41px;
-        margin-top: 30px;
-    }
-&__button-icon{
-fill:pink;
-} 
-    }
-    
-
-    @media screen and (min-width: 768px){
-        .products{
-        
-            &__label{
-                font-size:3rem;
-            }
-            
-            &__title{
-                margin-bottom: 150px;
-                font-size: 5.5rem;
-            }
-        
-            &__menu{
-                width:calc(100% - 68px);
-                flex-direction: row;
-                column-gap: 20px;
-                justify-content: space-between;
-            }
-        
-            &__menu-items{
-                padding-left: 11px;
-                padding-right: 11px;
-            }
-            
-         &__menu-description{
-            margin-bottom: 0px;
-            line-height: 2.464rem;
-            padding: 0rem 11px 0 11px;
-        }
-
-            }
+@media screen and (min-width: 768px) {
+  .products {
+    &__label {
+      font-size: 3rem;
     }
 
-    @media screen and (min-width: 1200px){
-        .products{
-        
-            &__label{
-                font-size:3.4rem;
-            }
-            
-            &__title{
-                margin-bottom: 259px;
-                font-size: 6.6rem;
-            }
-
-            &__name{
-                margin-bottom: 32px;
-            }
-        
-            &__menu{
-                width:calc(100% - 232px);
-                flex-direction: row;
-                column-gap: 29px;
-                justify-content: space-between;
-            }
-        
-            &__menu-items{
-                padding-left: 44px;
-                padding-right: 44px;
-            }
-            
-         &__menu-description{
-            margin-top: 32px;
-            margin-bottom: 62px;
-            line-height: 2.464rem;
-            padding: 0;
-        }
-
-
-            &__swipe{
-                display: flex;
-                margin-bottom: 100px;
-             
-            
-                &::after{
-                    position: absolute;
-                    left:-20px;
-                }
-            
-            }
-
-            &__button{ 
-                margin-bottom: 50px;
-                margin-top: 0px;
-            }
+    &__title {
+      margin-bottom: 150px;
+      font-size: 5.5rem;
     }
+
+    &__menu {
+      width: calc(100% - 68px);
+      flex-direction: row;
+      column-gap: 20px;
+      justify-content: space-between;
     }
+
+    &__menu-items {
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+
+    &__menu-description {
+      margin-bottom: 0px;
+      line-height: 2.464rem;
+      padding: 0rem 11px 0 11px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products {
+    &__label {
+      font-size: 3.4rem;
+    }
+
+    &__title {
+      margin-bottom: 259px;
+      font-size: 6.6rem;
+    }
+
+    &__name {
+      margin-bottom: 32px;
+    }
+
+    &__menu {
+      width: calc(100% - 232px);
+      flex-direction: row;
+      column-gap: 29px;
+      justify-content: space-between;
+    }
+
+    &__menu-items {
+      padding-left: 44px;
+      padding-right: 44px;
+    }
+
+    &__menu-description {
+      margin-top: 32px;
+      margin-bottom: 62px;
+      line-height: 2.464rem;
+      padding: 0;
+    }
+
+    &__swipe {
+      display: flex;
+      margin-bottom: 100px;
+
+      &::after {
+        position: absolute;
+        left: -20px;
+      }
+    }
+
+    &__button {
+      margin-bottom: 50px;
+      margin-top: 0px;
+    }
+  }
+}
+//modal products//
+.button--hero {
+  margin: 30px auto 0;
+}
+
+.button--submenu:is(:hover, :focus) {
+  background-color: #2196f3;
+  color: #fff;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button--submenu:not(last-child) {
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.backdrop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 15px;
+}
+.modal {
+  position: relative;
+  background-color: pink;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal__button-close {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px black;
+  background-color: rgba(0, 0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.modal__form {
+  max-width: 450px;
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 40px;
+  position: relative;
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.modal__textarea {
+  background-color: pink;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__form {
+    max-width: 528px;
+  }
+}
