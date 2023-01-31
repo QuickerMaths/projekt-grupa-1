@@ -41,9 +41,32 @@
     align-items: center;
     justify-content: flex-start;
     border-top: 1px solid $border-menu-modal;
+    padding-bottom: 1px;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+
+    &:hover::before {
+      transform: scale(1);
+      transform-origin: left center;
+    }
 
     &:last-child {
       border-bottom: 1px solid $border-menu-modal;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      height: 4;
+      background-color: transparent;
+      border: 2px solid $white;
+      z-index: -1;
+      transform: scale(0);
+      transition: transform 0.5s ease-in-out;
+      transform-origin: right center;
     }
   }
 
@@ -55,6 +78,7 @@
     font-size: 1.4rem;
     line-height: 18px;
     color: $white;
+    transition: transform 0.5s ease-in-out;
   }
 }
 
