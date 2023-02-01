@@ -1,11 +1,11 @@
 .products {
-  max-width: 400px;
+  width: 100%;
   display: flex;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 
   &__label {
     display: flex;
@@ -119,16 +119,15 @@
 
   &__swipe {
     display: flex;
-    position: relative;
-    // margin-bottom: 30px;
+    position: absolute;
+    margin-bottom: 30px;
 
     &::after {
       content: '...';
-      position: absolute;
+      // position: absolute;
       color: $white;
       font-size: 20px;
-      top: 190px;
-      left: -10px;
+      top: 35%;
       margin-bottom: 30px;
       letter-spacing: 5;
     }
@@ -165,38 +164,31 @@
   &__button-icon {
     fill: pink;
   }
+
+  &__menu {
+    width: calc(100% - 68px);
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: space-between;
+  }
+
+  &__menu-items {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+
+  &__menu-description {
+    margin-bottom: 0px;
+    line-height: 2.464rem;
+    padding: 0rem 11px 0 11px;
+    margin-bottom: 22px;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .products {
-    max-width: none;
-
     &__label {
-      font-size: 3rem;
-    }
-
-    &__title {
-      margin-bottom: 150px;
-      font-size: 5.5rem;
-    }
-
-    &__menu {
-      width: calc(100% - 68px);
-      flex-direction: row;
-      column-gap: 20px;
-      justify-content: space-between;
-    }
-
-    &__menu-items {
-      padding-left: 11px;
-      padding-right: 11px;
-    }
-
-    &__menu-description {
-      margin-bottom: 0px;
-      line-height: 2.464rem;
-      padding: 0rem 11px 0 11px;
-      margin-bottom: 22px;
+      font-size: 3.4rem;
     }
   }
 }
@@ -235,16 +227,15 @@
       padding: 0;
     }
 
-    // &__swipe{
-    //     display: flex;
-    //     margin-bottom: 100px;
+    &__swipe {
+      display: flex;
+      margin-bottom: 100px;
 
-    //     &::after{
-    //         position: absolute;
-    //         left:-20px;
-    //     }
-
-    // }
+      &::after {
+        position: absolute;
+        left: -20px;
+      }
+    }
 
     &__button {
       margin-bottom: 50px;

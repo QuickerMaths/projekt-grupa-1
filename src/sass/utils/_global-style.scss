@@ -16,10 +16,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   font-size: $fs-base;
   font-family: $ff-base;
