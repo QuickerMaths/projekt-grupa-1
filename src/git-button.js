@@ -31,7 +31,7 @@ circle.addEventListener('click', () => {
   circle.classList.toggle('two');
 });
 
-window.addEventListener('load', event => {
+window.addEventListener('load', () => {
   setInterval(() => {
     circle.classList.toggle('git-circle-animation');
   }, 2000);
