@@ -72,6 +72,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &--products {
+      margin-bottom: 41px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__read-more {
