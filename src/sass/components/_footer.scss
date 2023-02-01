@@ -74,10 +74,14 @@
   &__icon {
     cursor: pointer;
     padding: 0px 6.5px;
-    background-color: #fea5bb;
+    background-color: $social-icon-pink;
     border-radius: 50px;
     width: 32px;
     height: 32px;
+
+    &:hover {
+      background-color: $blueberry-lemonade;
+    }
   }
 }
 
