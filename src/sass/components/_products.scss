@@ -1,11 +1,11 @@
 .products {
-  width: 100%;
+  max-width: 400px;
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
 
   &__label {
     display: flex;
@@ -119,15 +119,16 @@
 
   &__swipe {
     display: flex;
-    position: absolute;
-    margin-bottom: 30px;
+    position: relative;
+    // margin-bottom: 30px;
 
     &::after {
       content: '...';
-      // position: absolute;
+      position: absolute;
       color: $white;
       font-size: 20px;
-      top: 35%;
+      top: 190px;
+      left: -10px;
       margin-bottom: 30px;
       letter-spacing: 5;
     }
@@ -146,6 +147,7 @@
     margin-top: 30px;
     padding: 0 11px 0 11px;
     text-align: center;
+    margin-bottom: 25px;
   }
 
   // btn od Tomka tu będzie, ten jest testowy
@@ -167,6 +169,8 @@
 
 @media screen and (min-width: 768px) {
   .products {
+    max-width: none;
+
     &__label {
       font-size: 3rem;
     }
@@ -192,6 +196,7 @@
       margin-bottom: 0px;
       line-height: 2.464rem;
       padding: 0rem 11px 0 11px;
+      margin-bottom: 22px;
     }
   }
 }
@@ -230,125 +235,20 @@
       padding: 0;
     }
 
-    &__swipe {
-      display: flex;
-      margin-bottom: 100px;
+    // &__swipe{
+    //     display: flex;
+    //     margin-bottom: 100px;
 
-      &::after {
-        position: absolute;
-        left: -20px;
-      }
-    }
+    //     &::after{
+    //         position: absolute;
+    //         left:-20px;
+    //     }
+
+    // }
 
     &__button {
       margin-bottom: 50px;
       margin-top: 0px;
     }
-  }
-}
-//modal products//
-.button--hero {
-  margin: 30px auto 0;
-}
-
-.button--submenu:is(:hover, :focus) {
-  background-color: #2196f3;
-  color: #fff;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.button--submenu:not(last-child) {
-  margin-right: 8px;
-  margin-bottom: 15px;
-}
-
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-}
-.backdrop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.2);
-  -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 15px;
-}
-.modal {
-  position: relative;
-  background-color: pink;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.modal__button-close {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 10px black;
-  background-color: rgba(0, 0, 0, 0);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  outline: none;
-  cursor: pointer;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-}
-.modal__form {
-  max-width: 450px;
-  padding: 0 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-top: 40px;
-  position: relative;
-}
-.modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  line-height: 23px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-bottom: 12px;
-}
-.modal__textarea {
-  background-color: pink;
-  text-align: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .modal__form {
-    max-width: 528px;
   }
 }

@@ -1,18 +1,18 @@
 //mobile
 .container-reviews {
   max-width: 320px;
-  margin: 0 20px;
+  margin: 0 auto;
   height: 100%;
 
   &__img {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   &__text-block {
     position: relative;
     background-color: #fafafa;
-    margin: 0 auto;
+    margin: 0 20px;
     margin-top: 29px;
   }
 
@@ -21,22 +21,22 @@
     width: 180px;
     background: linear-gradient(
       180deg,
-      #fafafa 8rem,
-      #e1e1e1 8rem,
-      #fafafa 8.2rem,
-      #fafafa 8.2rem,
-      #fafafa 11.3rem,
-      #e1e1e1 11.3rem,
-      #fafafa 11.5rem,
-      #fafafa 11.5rem,
-      #fafafa 15.3rem,
-      #e1e1e1 15.3rem,
-      #fafafa 15.5rem,
-      #fafafa 15.5rem,
-      #fafafa 18.7rem,
-      #e1e1e1 18.7rem,
-      #fafafa 18.9rem,
-      #fafafa 18.9rem,
+      #fafafa 7rem,
+      #e1e1e1 7rem,
+      #fafafa 7.2rem,
+      #fafafa 7.2rem,
+      #fafafa 10.3rem,
+      #e1e1e1 10.3rem,
+      #fafafa 10.5rem,
+      #fafafa 10.5rem,
+      #fafafa 16.3rem,
+      #e1e1e1 16.3rem,
+      #fafafa 16.5rem,
+      #fafafa 16.5rem,
+      #fafafa 19.3rem,
+      #e1e1e1 19.3rem,
+      #fafafa 19.5rem,
+      #fafafa 19.5rem,
       #fafafa 22.5rem,
       #e1e1e1 22.5rem,
       #fafafa 22.7rem,
@@ -52,13 +52,18 @@
       #fafafa 32.5rem,
       #e1e1e1 32.5rem,
       #fafafa 32.7rem,
-      #fafafa 32.7rem
+      #fafafa 32.7rem,
+      #fafafa 33.5rem,
+      #e1e1e1 33.5rem,
+      #fafafa 33.7rem,
+      #fafafa 33.7rem
     );
   }
 
   &__text {
-    @include font-properties($ff-base, 500, $fs-base, 255%, 0.01em);
+    @include font-properties($ff-base, 500, 12px, 255%, 0.01em);
     width: 157px;
+    height: auto;
     padding-top: 47px;
     margin: 0 auto;
     text-align: center;
@@ -91,6 +96,7 @@
   }
 
   &__reviewier-data-block {
+    padding-bottom: 60px;
     margin-top: 18px;
     text-align: center;
   }
@@ -98,42 +104,19 @@
   &__reviewier-data {
     @include font-properties($ff-base, 500, $fs-base, 186%, 0.01em);
   }
-
-  &__navigation {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-  }
-
-  &__icon-home {
-    fill: $blueberry-lemonade;
-  }
-
-  &__nav-sec-rev {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: $bgreview-grey;
-  }
-
-  &__nav-third-rev {
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    background-color: $bgreview-grey;
-  }
 }
 
 //tablet
 @media screen and (min-width: 768px) {
   .container-reviews {
     max-width: 768px;
-    margin: 0 74px;
+    margin: 0 auto;
 
     &__text-block {
       width: 620px;
       margin-top: 19px;
+      margin-left: 74px;
+      margin-right: 74px;
     }
 
     &__linear-grad {
@@ -169,7 +152,7 @@
     }
 
     &__reviewier-data {
-      @include font-properties($ff-base, 500, $fs-alt, 186%, 0.01em);
+      @include font-properties($ff-base, 500, $fs-base, 186%, 0.01em);
     }
   }
 }
@@ -178,10 +161,9 @@
 @media screen and (min-width: 1280px) {
   .container-reviews {
     max-width: 1280px;
-    margin: 0 176px;
 
     &__linear-grad {
-      width: 926px;
+      width: 850px;
       background: linear-gradient(
         180deg,
         #fafafa 7.7rem,
@@ -198,22 +180,23 @@
     &__text-block {
       width: 926px;
       margin-top: 19px;
+      margin-left: 174px;
+      margin-right: 174px;
     }
 
     &__text {
       padding-top: 47px;
-      padding-bottom: 39px;
-      width: 90%;
+      max-width: 90%;
       @include font-properties($ff-base, 500, $fs-alt, 186%, 0.04em);
     }
 
     &__text::before {
-      left: 7px;
+      left: 49px;
       top: 33px;
     }
 
     &__reviewier-data {
-      @include font-properties($ff-base, 500, $fs-alt, 186%, 0.01em);
+      @include font-properties($ff-base, 500, $fs-base, 186%, 0.01em);
     }
 
     &__navigation {
