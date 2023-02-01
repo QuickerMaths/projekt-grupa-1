@@ -1,11 +1,21 @@
 .advantages{
+    background-color:$sea-salt-sherbet;
     display:flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    
+    &__main{
+max-width: 230px;
+    // display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     background-color:$sea-salt-sherbet;
     padding-top: 39px;
     padding-bottom: 97px;
+    margin-left: 20px;
+}
 
 &__item{
     font-family:$ff-alt;
@@ -36,14 +46,14 @@
     justify-content: flex-start;
     align-items: center;
     letter-spacing: 0.4;
-    line-height: 1.7rem;
+    line-height: 1.7;
     padding-right: 30px;
 }
 
 &__container{
     display: flex;
     width:33px;
-    height: 50px;
+    height: 60px;
  &--milk{
          &::before{
              content: "";
@@ -58,7 +68,7 @@
          position: absolute;
          background: url("/src/images/_advantages/icon2.png")no-repeat center center/cover;
          width:55px;
-         height: 50px;
+         height: 55px;
 }}
 &--ice{
  &::before{
@@ -71,17 +81,24 @@
 }
 }
 
-@media screen and (min-width: 786px){
-    .advantages{
-        flex-direction: row;
-        column-gap: 30px;
-        align-items: center;
-        justify-content:space-between;
-
-        padding-top: 66px;
-         padding-left: 36px;
-         padding-right: 76px;
-
+@media screen and (min-width: 768px){
+         .advantages{
+            background-color:$sea-salt-sherbet;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            
+            &__main{
+                display: flex;
+                max-width:768px ;
+                flex-direction: row;
+                column-gap: 60px;
+                align-items: center;
+                // justify-content:space-between;
+                padding-top: 66px;
+                 padding-left: 36px;
+        }
 
     
     &__item{
@@ -105,12 +122,25 @@
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1280px){
     .advantages{
-         padding-left: 115px;
-         padding-right: 115px;
-         padding-bottom:139px;
-         margin-bottom: 0;
+        background-color:$sea-salt-sherbet;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        
+        &__main{
+            flex-direction: row;
+            column-gap: 60px;
+            max-width: 1280px;
+            padding-left: 115px;
+            padding-right: 115px;
+            padding-bottom:139px;
+            padding-top: 39px;
+            margin-bottom: 0;
+    }
+
    
     &__label{
         margin-top: 40px;

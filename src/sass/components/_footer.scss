@@ -1,12 +1,17 @@
 .footer {
   padding: 0px 20px;
   background-color: $sea-salt-sherbet;
-  font-family: Titan One, sans-serif;
+  font-family: $ff-alt, sans-serif;
   font-size: $fs-alt;
 
   flex-wrap: wrap;
   justify-content: center;
-  display: grid;
+  display: flex;
+
+  &__all {
+    display: block;
+    margin-bottom: 43px;
+  }
 
   &__left-side {
     text-align: left;
@@ -14,7 +19,7 @@
   }
 
   &__paragraf {
-    width: 234px;
+    width: 232px;
     height: 42px;
     color: $amelies-tutu;
     margin: 0px;
@@ -34,16 +39,34 @@
   }
 
   &__phone {
-    font-size: $fs-base;
+    font-size: 12px;
     margin: 0px;
     margin-top: 46px;
     text-align: right;
     width: 230px;
+    font-weight: 700;
+    font-family: $ff-base, sans-serif;
   }
 
   &__phone-link {
     color: $blueberry-lemonade;
     text-decoration: none;
+  }
+
+  &__rights {
+    justify-content: center;
+    display: flex;
+    border-top: 1px solid #e1e1e1;
+    width: 100%;
+  }
+
+  &__rights-item {
+    color: $gypsy-magic;
+    text-align: center;
+    font-size: 14px;
+    width: 140px;
+    font-weight: 700;
+    font-family: $ff-base, sans-serif;
   }
 }
 
@@ -56,36 +79,85 @@
   &__icon {
     cursor: pointer;
     fill: $white;
-    padding: 6.5px;
     background-color: $amelies-tutu;
-    border-radius: 50%;
+    padding: 6.5px;
+    border-radius: 50px;
     width: 32px;
     height: 32px;
+
+    &:hover {
+      background-color: $blueberry-lemonade;
+    }
   }
 }
+
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
     padding: 0px 36px;
+
+    &__all {
+      display: flex;
+      place-content: space-between;
+
+      margin: 0px 36px 91px;
+    }
 
     &__left-side {
       margin-right: 92px;
     }
 
     &__head {
+      width: 340px;
       font-size: $fs-h3-tab;
     }
 
     &__right-side {
       margin-top: 0px;
     }
+    &__phone {
+      width: 268px;
+    }
 
     &__paragraf {
+      width: 340px;
+      height: 57px;
       font-size: $fs-h2-tab;
+    }
+    &__rights-item {
+      width: 276px;
+      font-size: $fs-base;
     }
   }
   .social-list {
     justify-content: right;
     width: auto;
+
+    &__icon {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__all {
+      margin: 0px 115px 97px;
+    }
+
+    &__paragraf {
+      width: 472px;
+    }
+
+    &__head {
+      width: 474px;
+      font-size: $fs-h3-desk;
+    }
+
+    &__phone {
+      width: 319px;
+      font-size: $fs-alt;
+    }
   }
 }
