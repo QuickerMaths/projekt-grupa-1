@@ -13,11 +13,17 @@
 
 .modal-contacts {
   position: relative;
-  width: 50%;
+  width: 60%;
   height: 60%;
   background-color: #fff;
   display: grid;
   place-items: center;
+  background: #f99eb5;
+  border-radius: 20px;
+  z-index: 10000000000;
+  background-image: url(../images/about/mobile_milk@x1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
 
   &__button {
     position: absolute;
@@ -30,4 +36,15 @@
   visibility: none;
   pointer-events: none;
   transform: scale(0);
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .modal-contacts {
+    background-image: url(../images/about/mobile_milk@x2.png);
+  }
+}
+@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .modal-contacts {
+    background-image: url(../images/about/mobile_milk@x3.png);
+  }
 }
