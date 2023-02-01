@@ -1,7 +1,7 @@
 .creators-button {
   position: fixed;
   bottom: 50px;
-  left: 10px;
+  left: 2.5px;
   overflow: hidden;
   background-color: pink;
   border-radius: 50px;
@@ -12,7 +12,7 @@
   z-index: 10000;
 
   &.rewind-creators {
-    width: 330px;
+    width: 315px;
     border-radius: 15px;
   }
 
@@ -37,7 +37,7 @@
 .git-button {
   position: fixed;
   bottom: 10px;
-  left: 10px;
+  left: 2.5px;
   overflow: hidden;
   background-color: pink;
   border-radius: 50px;
@@ -92,5 +92,15 @@
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+@media (min-width: 768px) {
+  .creators-button {
+    left: 10px;
+  }
+
+  .git-button {
+    left: 10px;
   }
 }
