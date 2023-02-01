@@ -1,13 +1,13 @@
 .presentation {
   background-color: $rosie;
   max-width: 480px;
-padding-bottom: 50px;
+  padding-bottom: 50px;
   // max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-      margin: 0 auto;
+  margin: 0 auto;
 
   &__head {
     margin-top: 50px;
@@ -97,144 +97,144 @@ padding-bottom: 50px;
     column-gap: 25px;
     text-align: center;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+  }
 
-    &__team-members {
-      display: flex;
-      flex-direction: column;
-      column-gap: 50px;
-      // width: calc(100% - 20px);
-    }
+  &__team-members {
+    display: flex;
+    flex-direction: column;
+    column-gap: 50px;
+    // width: calc(100% - 20px);
+  }
 
-    &__team-members-name {
-      width: calc(100% - 20px);
-      text-align: center;
-      margin-top: 30px;
-      margin: 30px auto -30px auto;
-      font-family: $ff-alt;
-      font-size: 3rem;
-      font-weight: 400;
-      color: $blueberry-lemonade;
-      letter-spacing: 2;
-      text-transform: uppercase;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      row-gap: 20px;
-      padding-top: 30px;
+  &__team-members-name {
+    width: calc(100% - 20px);
+    text-align: center;
+    margin-top: 30px;
+    margin: 30px auto -30px auto;
+    font-family: $ff-alt;
+    font-size: 3rem;
+    font-weight: 400;
+    color: $blueberry-lemonade;
+    letter-spacing: 2;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-top: 30px;
 
-      // &:before{
-      //     content: "";
-      //     position: absolute;
-      //     background: url("/src/images/presentation_img/juli_works_trello.png") no-repeat center center/cover;
-      //     width:150px;
-      //     height: 300px;
-      //     border-radius: 10px;
-      //     transform: rotate(-30deg);
-      //     left:730px;
-      //     top: 380px;
+    // &:before{
+    //     content: "";
+    //     position: absolute;
+    //     background: url("/src/images/presentation_img/juli_works_trello.png") no-repeat center center/cover;
+    //     width:150px;
+    //     height: 300px;
+    //     border-radius: 10px;
+    //     transform: rotate(-30deg);
+    //     left:730px;
+    //     top: 380px;
 
-      // }
-    }
-    &__team-members-surname {
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      text-align: center;
-      font-family: $ff-alt;
-      font-size: 2rem;
-      font-weight: 200;
-      color: $white;
-      letter-spacing: 2;
-      text-transform: uppercase;
-      width: calc(100% - 20px);
-    }
+    // }
+  }
+  &__team-members-surname {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-family: $ff-alt;
+    font-size: 2rem;
+    font-weight: 200;
+    color: $white;
+    letter-spacing: 2;
+    text-transform: uppercase;
+    width: calc(100% - 20px);
+  }
 
-    &__member-description {
-      display: flex;
-      flex-direction: column;
-    }
+  &__member-description {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &__team {
-      font-size: 25px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 800px;
-      row-gap: 25px;
-      column-gap: 25px;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-    }
-    &__team-members {
-      display: flex;
-      flex-direction: column;
-      column-gap: 50px;
-      // width: calc(100% - 20px);
-    }
+  &__team {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    row-gap: 25px;
+    column-gap: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  &__team-members {
+    display: flex;
+    flex-direction: column;
+    column-gap: 50px;
+    // width: calc(100% - 20px);
+  }
 
-    &__team-members-name {
-      margin-top: 30px;
-      font-family: $ff-alt;
-      font-size: 4rem;
-      font-weight: 400;
-      color: $blueberry-lemonade;
-      letter-spacing: 2;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      // &:before {
-      //   content: '';
-      //   position: absolute;
-      //   background: url('/src/images/presentation_img/juli_works_trello.png') no-repeat center
-      //     center/cover;
-      //   width: 150px;
-      //   height: 300px;
-      //   border-radius: 10px;
-      //   transform: rotate(-30deg);
-      //   left: 730px;
-      //   top: 380px;
-      // }
-    }
-    &__member-description {
-      display: flex;
-      flex-direction:column;
-    }
+  &__team-members-name {
+    margin-top: 30px;
+    font-family: $ff-alt;
+    font-size: 4rem;
+    font-weight: 400;
+    color: $blueberry-lemonade;
+    letter-spacing: 2;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    // &:before {
+    //   content: '';
+    //   position: absolute;
+    //   background: url('/src/images/presentation_img/juli_works_trello.png') no-repeat center
+    //     center/cover;
+    //   width: 150px;
+    //   height: 300px;
+    //   border-radius: 10px;
+    //   transform: rotate(-30deg);
+    //   left: 730px;
+    //   top: 380px;
+    // }
+  }
+  &__member-description {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &__member-data {
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+  &__member-data {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    &__member-img {
-      margin-bottom: 20px;
-      // margin-top: 50px;
-    }
+  &__member-img {
+    margin-bottom: 20px;
+    object-fit: cover;
+    // margin-top: 50px;
+  }
 
-    &__member-img {
-      margin-bottom: 50px;
-      // margin-top: 30px;
-      width: 300px;
-      height: 450px;
-      border-radius: 15px;
-    }
-  
+  &__member-img {
+    margin-bottom: 50px;
+    // margin-top: 30px;
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+  }
 
   &__social-media {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
 
   // &__member-item {
   //   margin-left: 20px;
@@ -288,7 +288,7 @@ padding-bottom: 50px;
     flex-direction: row;
     flex-wrap: wrap;
     line-height: 2;
-    &--about{
+    &--about {
       font-size: 12px;
       // background-color:blue;
     }
@@ -365,8 +365,8 @@ padding-bottom: 50px;
     text-transform: uppercase;
     width: calc(100% - 20px);
     margin-bottom: 30px;
-  }}
-
+  }
+}
 
 .overlay-description {
   margin-bottom: 30px;
@@ -428,11 +428,10 @@ padding-bottom: 50px;
     width: 32px;
     height: 32px;
     justify-content: center;
-    &--presentation{
-    cursor: pointer;
+    &--presentation {
+      cursor: pointer;
 
-    background-color: $blueberry-lemonade;
-
+      background-color: $blueberry-lemonade;
     }
   }
 }
