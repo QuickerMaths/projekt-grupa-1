@@ -3,8 +3,8 @@
   padding-inline: 20px;
   z-index: 0;
   overflow-x: hidden;
-
   position: relative;
+
   &__nav-bar {
     display: flex;
     align-items: center;
@@ -20,9 +20,6 @@
     fill: $blueberry-lemonade;
   }
   &__btn {
-    display: none;
-  }
-  &__nav-desktop {
     display: none;
   }
   &__slogan {
@@ -41,16 +38,16 @@
     max-width: 218px;
     margin-bottom: 19px;
     z-index: 3;
-    &--accent {
-      font-family: $ff-alt;
-      font-weight: 400;
-      font-size: 4.8rem;
-      line-height: 0.965;
+  }
+  &__heading--accent {
+    font-family: $ff-alt;
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 0.965;
 
-      text-transform: uppercase;
+    text-transform: uppercase;
 
-      color: $blueberry-lemonade;
-    }
+    color: $blueberry-lemonade;
   }
 
   &__bg-img {
@@ -58,12 +55,14 @@
     bottom: 0;
     z-index: -1;
     right: 10vw;
+    max-width: 171px;
   }
   &__circle {
     position: absolute;
-    right: calc(10vw - 92px);
+    right: 10vw;
     bottom: 75px;
     z-index: -1;
+    transform: translateX(30%);
 
     width: 344px;
     height: 344px;
@@ -73,11 +72,12 @@
   }
   &__slider {
     display: none;
+    align-items: flex-end;
+    gap: 30px;
+    margin-top: 19px;
   }
   &__text-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
   }
   &__text {
     font-size: 0.8rem;
@@ -111,22 +111,25 @@
       text-align: right;
     }
     &__bg-img {
+      max-width: 143px;
       bottom: 0;
       left: 0;
     }
     &__circle {
-      width: 324px;
-      height: 324px;
+      max-width: 324px;
+      max-height: 324px;
 
       bottom: 46px;
-      left: -68px;
+      left: 0;
+
+      transform: translateX(-20%);
     }
     &__numbers {
-      font-family: $ff-alt;
+      font-family: 'Titan One';
       font-style: normal;
       font-weight: 400;
-      font-size: 2.8rem;
-      line-height: 1.142;
+      font-size: 28px;
+      line-height: 32px;
 
       text-align: right;
       letter-spacing: 0.04em;
@@ -150,8 +153,11 @@
       }
     }
     &__info {
-      font-size: 0.8rem;
-      line-height: 1.25;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 10px;
       text-align: right;
 
       color: #ffffff;
@@ -166,126 +172,18 @@
     &__slogan {
       padding-block: 15px 28px;
     }
-    &__heading {
-      max-width: 162px;
-      font-size: 2.2rem;
-      line-height: 1.145;
-      &--accent {
-        font-size: 3.4rem;
-        line-height: 0.905;
-      }
-    }
     &__btn {
-      display: flex;
-      align-items: center;
+      display: block;
       padding: 12px 35px;
       margin-left: 30px;
-      border-radius: 22px !important;
       &-icon {
         fill: $blueberry-lemonade;
-        // stroke: none;
+        stroke: none;
         margin-left: 12px;
       }
     }
     &__slider {
       display: flex;
-      align-items: flex-end;
-      margin-top: 19px;
     }
-  }
-}
-
-@media (min-width: 1280px) {
-  .header {
-    padding: 0;
-    &__nav-bar {
-      padding-inline: 47px 115px;
-    }
-    &__grid {
-      padding-inline: 115px;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    &__hamburger {
-      display: none;
-    }
-    &__nav-desktop {
-      display: flex;
-      align-items: center;
-      gap: 35px;
-
-      margin-left: 110px;
-    }
-    &__nav-item {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 21px;
-
-      color: $white;
-      & a {
-        color: inherit;
-      }
-    }
-    &__slogan {
-      padding-top: 84px;
-      padding-bottom: 0;
-
-      position: relative;
-    }
-    &__heading {
-      // padding-left: 69px;
-      max-width: 277px;
-      font-size: 3.8rem;
-      line-height: 1.145;
-      &--accent {
-        font-size: 5.8rem;
-        line-height: 0.905;
-      }
-    }
-    &__slider {
-      gap: 30px;
-      padding-block: 102px 56px;
-      margin-top: 10px;
-      justify-content: flex-end;
-    }
-    &__slider-img {
-      position: absolute;
-      bottom: 41px;
-      left: -38px;
-    }
-    &__text {
-      font-size: 1.4rem;
-      max-width: 200px;
-    }
-    &__bg-img {
-      bottom: 0;
-      left: 20%;
-    }
-    &__circle {
-      width: 538px;
-      height: 538px;
-      left: 0;
-    }
-    &__btn {
-      margin-left: auto;
-    }
-    &__btn.btn {
-      font-size: 1.6rem;
-    }
-    &__grid-right {
-      padding-top: 74px;
-    }
-    &__numbers {
-      font-size: 4.6rem;
-      &::after {
-        width: 30px;
-        height: 30px;
-      }
-    }
-    &__bg-tasty {
-      right: 0;
-    }
-  }
-  .btn.btn__header {
-    font-size: 1.4rem;
   }
 }

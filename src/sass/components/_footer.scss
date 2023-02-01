@@ -90,6 +90,7 @@
     }
   }
 }
+
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
@@ -122,6 +123,10 @@
       width: 340px;
       height: 57px;
       font-size: $fs-h2-tab;
+    }
+    &__rights-item {
+      width: 276px;
+      font-size: $fs-base;
     }
   }
   .social-list {
