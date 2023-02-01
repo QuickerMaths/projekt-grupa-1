@@ -1,5 +1,5 @@
 .products {
-  max-width: 320px;
+  max-width: 480px;
   display: flex;
   margin: 0 auto;
   padding: 0;
@@ -91,14 +91,17 @@
 
     &--pink {
       background-color: $rosie;
+      max-width: 320px;
     }
 
     &--beige {
       background-color: $amber-moon;
+      max-width: 320px;
     }
 
     &--green {
       background-color: $lickety-split;
+      max-width: 320px;
     }
   }
 
@@ -213,9 +216,9 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products {
-    max-width: 1200px;
+    max-width: 1280px;
 
     &__label {
       font-size: 3.4rem;
