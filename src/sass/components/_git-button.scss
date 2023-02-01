@@ -35,7 +35,7 @@
 }
 
 .git-circle-animation {
-  animation: git-circle-animation 1s;
+  animation: git-circle-animation 1s ease-in-out;
 }
 
 @keyframes git-circle-animation {
