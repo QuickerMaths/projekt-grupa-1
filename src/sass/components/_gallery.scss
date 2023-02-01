@@ -7,6 +7,7 @@
   background-position: center;
   margin: 0px auto;
   background-size: contain;
+  margin-bottom: 80px;
 
   &__container {
     background-image: url('/src/images/gallery-mobile.jpg');
@@ -34,6 +35,7 @@
 @media screen and (min-width: 768px) {
   .gallery{
     height: 264px;
+    margin-bottom: 121px;
   
   &__container {
     background-image: url('/src/images/gallery-tablet.jpg');
@@ -47,6 +49,7 @@
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .gallery{
   height: 264px;
+  margin-bottom: 121px;
 
 &__container {
   background-image: url('/src/images/gallery-tablet@2x.jpg');
@@ -60,6 +63,7 @@
   screen and (min-width: 768px) and (min-resolution: 3dppx) {
     .gallery{
       height: 264px;
+      margin-bottom: 121px;
     
     &__container {
       background-image: url('/src/images/gallery-tablet@3x.jpg');
@@ -71,6 +75,7 @@
 @media screen and (min-width: 1280px) {
   .gallery {
     height: 430px;
+    margin-bottom: 123px;
   
   &__container {
     background-image: url('/src/images/gallery-desktop.jpg');
@@ -84,6 +89,7 @@
   screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .gallery {
     height: 430px;
+    margin-bottom: 123px;
   
   &__container {
     background-image: url('/src/images/gallery-desktop@2x.jpg');
@@ -97,6 +103,7 @@
   screen and (min-width: 1280px) and (min-resolution: 3dppx) {
   .gallery {
     height: 430px;
+    margin-bottom: 123px;
   
   &__container {
     background-image: url('/src/images/gallery-desktop@3x.jpg');
