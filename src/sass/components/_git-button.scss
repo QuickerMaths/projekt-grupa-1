@@ -1,3 +1,39 @@
+.creators-button {
+  position: fixed;
+  bottom: 50px;
+  left: 10px;
+  overflow: hidden;
+  background-color: pink;
+  border-radius: 50px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  transition: width 0.5s, border-radius 0.5s;
+  z-index: 10000;
+
+  &.rewind-creators {
+    width: 330px;
+    border-radius: 15px;
+  }
+
+  &__link {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    font-family: $fs-base;
+    color: $black;
+    font-weight: 700;
+    min-width: 330px;
+  }
+
+  &__svg {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+  }
+}
+
 .git-button {
   position: fixed;
   bottom: 10px;
@@ -11,12 +47,12 @@
   transition: width 0.5s, border-radius 0.5s;
   z-index: 10000;
 
-  &.two {
+  &.rewind-git {
     width: 260px;
     border-radius: 15px;
   }
 
-  &__text {
+  &__link {
     position: absolute;
     top: 50%;
     left: 40px;
