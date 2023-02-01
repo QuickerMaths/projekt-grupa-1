@@ -10,6 +10,29 @@
     align-items: center;
     padding-top: 6px;
   }
+  &__nav-item {
+    padding-bottom: 4px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: $blueberry-lemonade;
+      border-radius: 50px;
+      height: 4px;
+      width: 100%;
+      transform-origin: left center;
+      transform: scale(0);
+      transition: transform 0.5s ease;
+    }
+
+    &:hover::before {
+      transform-origin: center right;
+      transform: scale(1);
+    }
+  }
   &__logo {
     max-width: 199px;
   }
