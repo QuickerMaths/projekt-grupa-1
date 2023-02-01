@@ -1,70 +1,98 @@
-<header class="header">
+<header class="header" id="home">
+  <div class="header__nav-bar">
+    <img
+      src="./images/header/logo.png"
+      class="header__logo"
+      srcset="
+        ./images/header/logo.png    199w,
+        ./images/header/logo@2x.png 398w,
+        ./images/header/logo@3x.png 597w
+      "
+    />
 
+    <button
+      class="menu-toggle js-open-menu header__hamburger"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      type="button"
+    >
+      <svg class="hamburger header__hamburger" viewBox="0 0 100 100" width="40">
+        <rect class="hamburger-top line" width="80" height="5" x="10" y="30" rx="0"></rect>
+        <rect class="hamburger-middle line" width="80" height="5" x="10" y="50" rx="0"></rect>
+        <rect class="hamburger-bottom line" width="80" height="5" x="10" y="70" rx="0"></rect>
+      </svg>
+    </button>
+    <button class="btn__buy-now btn header__btn">
+      Buy now
+      <svg width="10px" height="10px" class="header__btn-icon">
+        <use href="./images/icons.svg#icon-vector1"></use>
+      </svg>
+    </button>
+  </div>
 
-    <div class="header__nav-bar">
+  <div class="header__grid">
+    <div class="header__slogan">
+      <h1 class="header__heading">
+        ice cream made with
+        <span class="header__heading--accent">passion</span>
+      </h1>
 
-        <img src="./images/header/logo.png" class="header__logo" srcset="./images/header/logo.png 199w,
-            ./images/header/logo@2x.png 398w,
-            ./images/header/logo@3x.png 597w" />
-
-
-        <button class="menu-toggle js-open-menu js-close-menu header__hamburger" aria-expanded="false"
-            aria-controls="mobile-menu" type="button">
-            <svg class="hamburger header__hamburger" viewBox="0 0 100 100" width="40">
-
-                <rect class="hamburger-top line" width="80" height="5" x="10" y="30" rx="0"></rect>
-                <rect class="hamburger-middle line" width="80" height="5" x="10" y="50" rx="0"></rect>
-                <rect class="hamburger-bottom line" width="80" height="5" x="10" y="70" rx="0"></rect>
-
-            </svg>
-        </button>
-        <button class="btn__buy-now btn header__btn">Buy now
-            <svg width="10px" height="10px" class="header__btn-icon">
-                <use href="./images/icons.svg#icon-vector1"></use>
-            </svg></button>
-    </div>
-
-    <div class="header__grid">
-        <div class="header__slogan">
-            <h1 class="header__heading">
-                ice cream made with
-                <span class="header__heading--accent">passion</span>
-            </h1>
-
-            <button class="btn__header btn__header--products btn" type="button">Products</button>
-            <button class="btn__header btn__header--howmade btn" type="button">How it's made?</button>
-            <div class="header__slider">
-                <img class="header__slider-img" src="./images/header/milk.png" srcset="./images/header/milk.png 124w,
+      <button class="btn__header btn__header--products btn" type="button">Products</button>
+      <button class="btn__header btn__header--howmade btn" type="button">How it's made?</button>
+      <div class="header__slider">
+        <img
+          class="header__slider-img"
+          src="./images/header/milk.png"
+          srcset="
+            ./images/header/milk.png    124w,
             ./images/header/milk@2x.png 248w,
-            ./images/header/milk@3x.png 372w" alt="A jug of fresh milk"
-                    sizes="(min-width: 1280px) 188px, (min-width: 768px) 124px, 100vw">
-                <div header__text-container>
-                    <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et</p>
-                    <button class="btn__arrow-right btn header__arrow"><svg width="8px" height="8px">
-                            <use href="./images/icons.svg#icon-arrow-right2">
-                            </use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+            ./images/header/milk@3x.png 372w
+          "
+          alt="A jug of fresh milk"
+          sizes="(min-width: 1280px) 188px, (min-width: 768px) 124px, 100vw"
+        />
+        <div header__text-container>
+          <p class="header__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button class="btn__arrow-right btn header__arrow">
+            <svg width="8px" height="8px">
+              <use href="./images/icons.svg#icon-arrow-right2"></use>
+            </svg>
+          </button>
         </div>
-        <div class="header__grid-center">
-            <div class="header__circle"></div>
-            <img class="header__bg-img" src="./images/header/icecream.png" srcset=" ./images/header/icecream.png 171w,
-    ./images/header/icecream@2x.png 342w,
-    ./images/header/icecream@3x.png 513w" alt="Picture of iceacream">
-        </div>
-        <div class="header__grid-right">
-            <p class="header__numbers">16</p>
-            <p class="header__info">cafes</p>
-            <p class="header__numbers">23</p>
-            <p class="header__info">food trucks</p>
-            <img class="header__bg-tasty" src="./images/header/tasty.png" srcset="./images/header/tasty.png 168w,
-            ./images/header/tasty@2x.png 336w,
-            ./images/header/tasty@3x.png 504w" sizes="(min-width:1280px) 293px, (min-width: 768px) 168px, 100vw"
-                alt="Girl enjoying some icecreams">
-        </div>
-
+      </div>
     </div>
+    <div class="header__grid-center">
+      <div class="header__circle"></div>
+      <img
+        class="header__bg-img"
+        src="./images/header/icecream.png"
+        srcset="
+          ./images/header/icecream.png    171w,
+          ./images/header/icecream@2x.png 342w,
+          ./images/header/icecream@3x.png 513w
+        "
+        alt="Picture of iceacream"
+      />
+    </div>
+    <div class="header__grid-right">
+      <p class="header__numbers">16</p>
+      <p class="header__info">cafes</p>
+      <p class="header__numbers">23</p>
+      <p class="header__info">food trucks</p>
+      <img
+        class="header__bg-tasty"
+        src="./images/header/tasty.png"
+        srcset="
+          ./images/header/tasty.png    168w,
+          ./images/header/tasty@2x.png 336w,
+          ./images/header/tasty@3x.png 504w
+        "
+        sizes="(min-width:1280px) 293px, (min-width: 768px) 168px, 100vw"
+        alt="Girl enjoying some icecreams"
+      />
+    </div>
+  </div>
 </header>

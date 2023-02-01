@@ -6,12 +6,14 @@
   align-items: center;
   background-image: url(../images/about/mobile_milk@x1.png);
   background-size: 100vw;
-  background-position: center bottom 61px;
+  background-position-x: center;
+  background-position-y: bottom 61px;
   background-repeat: no-repeat;
 
   &__header1 {
     font-family: $ff-alt;
     font-size: $fs-h2-mob;
+    font-weight: 400;
     letter-spacing: $ls;
     color: $amelies-tutu;
     margin-bottom: 15px;
@@ -21,13 +23,19 @@
   &__header2 {
     font-family: $ff-alt;
     font-size: $fs-h3-mob;
+    font-weight: 400;
     color: $blueberry-lemonade;
     margin-bottom: 26px;
     text-transform: uppercase;
     max-width: 200px;
     text-align: center;
+    letter-spacing: $ls;
   }
-
+& > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   &__picture {
     margin-bottom: 46px;
     padding: 0 20px;
@@ -38,35 +46,28 @@
     font-family: $ff-base;
     font-size: 1.2rem;
     font-weight: 500;
-    margin-bottom: 47px;
     color: $black;
     line-height: 19px;
+    max-width: 480px;
+    padding: 0 50px;
+    text-align: left;
 
     &__p1 {
       margin-bottom: 47px;
-      color: $black;
-
-      padding: 0 50px;
+      max-height: 79px;
     }
 
     &__p2 {
-      font-family: $ff-base;
-      font-size: 1.2rem;
-      font-weight: 500;
-      margin-bottom: 17px;
-      color: $gypsy-magic;
-      padding: 0 50px;
-      text-align: left;
-      line-height: 19px;
       margin-bottom: 10px;
       color: $gypsy-magic;
+      & span {
+        letter-spacing: 0.03em;
+      }
     }
 
     &__p3 {
       margin-bottom: 17px;
       color: $gypsy-magic;
-      letter-spacing: $ls;
-      padding: 0 50px;
     }
 
     &__btn {
@@ -80,8 +81,6 @@
       color: $blueberry-lemonade;
       border: none;
       border-radius: 22px;
-      margin-bottom: 39px;
-      margin-left: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -101,6 +100,7 @@
       }
     }
   }
+}
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .about-box {
@@ -122,21 +122,30 @@
       &__header2 {
         font-size: $fs-h3-tab;
         margin-bottom: 50px;
-        max-width: 429px;
+        max-width: none;
       }
       & > div {
         display: flex;
+        flex-direction: row;
         gap: 17px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
       }
       &__text {
         font-size: 1.4rem;
         line-height: 25px;
         margin-top: 50px;
+        margin-bottom: 0;
         padding: 0;
+        max-width: 340px;
         &__p1 {
           margin-bottom: 49px;
         }
         &__p2 {
+          letter-spacing: $ls;
+        }
+        &__p3 {
           letter-spacing: $ls;
         }
         &__btn {
@@ -156,7 +165,8 @@
       background-image: url(../images/about/desktop_milk@x1.png);
       background-size: 100vw;
       background-repeat: no-repeat;
-      background-position: center bottom -65px;
+      background-position-x: center;
+      background-position-y: 342px;
       &__header1 {
         margin-top: 125px;
         font-size: $fs-h2-desk;
@@ -183,8 +193,12 @@
           line-height: 27px;
           margin-bottom: 35px;
         }
+        &__p3 {
+          margin-bottom: 0;
+        }
         &__btn {
           margin-top: 45px;
+          margin-bottom: 107px;
         }
       }
       &__picture {
@@ -206,4 +220,4 @@
       background-image: url(../images/about/desktop_milk@x3.png);
     }
   }
-}
+
