@@ -5,7 +5,7 @@ const creatorsButton = document.querySelector('.creators-button');
 const creatorsLink = document.querySelector('.creators-button__link');
 
 const textGit = `Check out our code on GitHub`;
-const textCreators = 'Check out who made this master peace';
+const textCreators = 'Check out who made this masterpiece';
 
 // Intersection observer
 
