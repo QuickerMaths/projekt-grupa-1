@@ -119,6 +119,10 @@
   }
 }
 
+.fade-in-right {
+  animation: fade-in-right 2s;
+}
+
 @keyframes fade-in-right {
   0% {
     transform: translateX(-75%);
@@ -128,12 +132,16 @@
   }
 }
 
+.fade-in-left {
+  animation: fade-in-left 2s;
+}
+
 @keyframes fade-in-left {
   0% {
-    transform: translateY(75%);
+    transform: translateX(75%);
   }
   100% {
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 }
 
