@@ -1,14 +1,11 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
+const openButton = document.querySelector('.modal-button');
+const closeButton = document.querySelector('.modal-contacts__button');
+const modal = document.querySelector('.overlay-contacts');
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+openButton.addEventListener('click', () => {
+  modal.classList.toggle('hidden');
+});
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
+closeButton.addEventListener('click', () => {
+  modal.classList.toggle('hidden');
+});

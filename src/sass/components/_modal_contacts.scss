@@ -1,11 +1,4 @@
-.modal-contacts__is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.4);
-}
-
-.modal-contacts__backdrop {
+.overlay-contacts {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,35 +7,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00000033;
-}
-.modal-contacts__backdrop.modal-contacts__is-hidden .modal-contacts {
-  transform: scale(0);
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
 }
 
 .modal-contacts {
   position: relative;
-  width: calc(100vw - 30px);
-  max-width: 450px;
-  min-height: 581px;
-  border-radius: 15px;
-  background-color: $white;
-  transition: transform 0.6s;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  &__close-button {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    padding: 5px;
-    border: 1px solid #0000001a;
-    border-radius: 50%;
-    background-color: $white;
-    cursor: pointer;
-  }
+  width: 50%;
+  height: 60%;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
 
-  &__close-icon {
-    display: block;
+  &__button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
+}
+
+.hidden {
+  visibility: none;
+  pointer-events: none;
+  transform: scale(0);
 }
