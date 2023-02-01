@@ -1,5 +1,5 @@
 .products {
-  max-width: 400px;
+  max-width: 320px;
   display: flex;
   margin: 0 auto;
   padding: 0;
@@ -169,7 +169,7 @@
 
 @media screen and (min-width: 768px) {
   .products {
-    max-width: none;
+    max-width: 768px;
 
     &__label {
       font-size: 3rem;
@@ -190,6 +190,18 @@
     &__menu-items {
       padding-left: 11px;
       padding-right: 11px;
+
+          &--pink {
+      max-width: 220px;
+    }
+
+    &--beige {
+      max-width: 220px;
+    }
+
+    &--green {
+      max-width: 220px;
+    }
     }
 
     &__menu-description {
@@ -201,8 +213,10 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .products {
+    max-width: 1200px;
+
     &__label {
       font-size: 3.4rem;
     }
@@ -219,13 +233,23 @@
     &__menu {
       width: calc(100% - 232px);
       flex-direction: row;
-      column-gap: 29px;
-      justify-content: space-between;
+      column-gap: 40px;
     }
 
     &__menu-items {
       padding-left: 44px;
       padding-right: 44px;
+      &--pink {
+      max-width: 335px;
+    }
+
+    &--beige {
+      max-width: 335px;
+    }
+
+    &--green {
+      max-width: 335px;
+    }
     }
 
     &__menu-description {
