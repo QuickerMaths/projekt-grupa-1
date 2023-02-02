@@ -3,8 +3,13 @@
   padding-inline: 20px;
   z-index: 0;
   overflow-x: hidden;
-
   position: relative;
+
+  &__container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
   &__nav-bar {
     display: flex;
     align-items: center;
@@ -121,6 +126,9 @@
 @media (min-width: 768px) {
   .header {
     padding-inline: 34px;
+    &__container {
+      max-width: 768px;
+    }
     &__grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr;
@@ -224,6 +232,10 @@
 @media (min-width: 1280px) {
   .header {
     padding: 0;
+
+    &__container {
+      max-width: 1280px;
+    }
     &__nav-bar {
       padding-inline: 47px 115px;
     }
