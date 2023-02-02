@@ -1,5 +1,7 @@
 .backdrop {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,72 +12,49 @@
   visibility: visible;
   transition: transform 0.5s ease-in-out;
 }
-.modal {
+
+.modal-products {
   position: relative;
   background-color: pink;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: calc(90% - 2em);
+  max-width: 480px;
+  height: auto;
 
   &__button-close {
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 10px black;
-    background-color: rgba(0, 0, 0, 0);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    outline: none;
-    cursor: pointer;
     position: absolute;
     top: 8px;
     right: 8px;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
   }
 
-  &__form {
-    max-width: 450px;
+  &__svg {
+    fill: $white;
+  }
+
+  &__content {
     padding: 0 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 40px;
-    position: relative;
+    max-width: 480px;
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    line-height: 23px;
-    letter-spacing: 0.03em;
+    font-size: 2rem;
+    letter-spacing: 0.06em;
     text-align: center;
     margin-bottom: 12px;
+    font-family: $ff-alt;
+    color: $white;
   }
-  &__textarea {
-    background-color: pink;
+  &__text {
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal__form {
-    max-width: 528px;
+    line-height: 2;
   }
 }
