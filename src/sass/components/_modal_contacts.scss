@@ -7,7 +7,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   visibility: visible;
+
   transform: scale(1);
   transition: transform 0.5s ease-in-out;
 }
@@ -25,6 +27,9 @@
   background-image: url(../images/about/mobile_milk@x1.png);
   background-size: 100%;
   background-repeat: no-repeat;
+
+  background-position: center;
+
 
   &__button {
     position: absolute;
