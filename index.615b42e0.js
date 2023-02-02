@@ -1,0 +1,2 @@
+const productsModalOpen=document.querySelectorAll(".modal-open"),productsModalClose=document.querySelector(".modal-products__button-close"),modalBackdrop=document.querySelector(".backdrop"),modalProducts=document.querySelector(".modal-products");productsModalClose.addEventListener("click",(()=>{modalBackdrop.classList.toggle("hidden")})),productsModalOpen.forEach((o=>{o.addEventListener("click",(()=>{modalBackdrop.classList.toggle("hidden")}))}));
+//# sourceMappingURL=index.615b42e0.js.map
