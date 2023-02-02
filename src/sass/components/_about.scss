@@ -58,11 +58,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/about/mobile_milk@x1.png);
-  background-size: 100vw;
-  background-position-x: center;
-  background-position-y: 93%;
-  background-repeat: no-repeat;
 
   &__header1 {
     font-family: $ff-alt;
@@ -89,6 +84,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(../images/about/mobile_milk@x1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 93%;
 }
   &__picture {
     margin-bottom: 46px;
@@ -162,18 +161,18 @@
 }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .about-box {
+    .about-box > div {
       background-image: url(../images/about/mobile_milk@x2.png);
     }
   }
   @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-    .about-box {
+    .about-box > div {
       background-image: url(../images/about/mobile_milk@x3.png);
     }
   }
   @media (min-width: 768px) {
     .about-box {
-      background-image: none;
+      
       &__header1 {
         margin-top: 130px;
         font-size: $fs-h2-tab;
@@ -184,6 +183,7 @@
         max-width: none;
       }
       & > div {
+        background-image: none;
         display: flex;
         flex-direction: row;
         gap: 17px;
@@ -221,11 +221,7 @@
   }
   @media (min-width: 1280px) {
     .about-box {
-      background-image: url(../images/about/desktop_milk@x1.png);
-      background-size: 100vw;
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-position-y: 117%;
+     
       &__header1 {
         margin-top: 125px;
         font-size: $fs-h2-desk;
@@ -236,6 +232,9 @@
         max-width: 534px;
       }
       & > div {
+        background-image: url(../images/about/desktop_milk@x1.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
         gap: 74px;
       }
       &__text {
@@ -268,14 +267,14 @@
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 1280px) and (min-resolution: 192dpi),
     screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-    .about-box {
+    .about-box > div {
       background-image: url(../images/about/desktop_milk@x2.png);
     }
   }
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 1280px) and (min-resolution: 288dpi),
     screen and (min-width: 1280px) and (min-resolution: 3dppx) {
-    .about-box {
+    .about-box > div {
       background-image: url(../images/about/desktop_milk@x3.png);
     }
   }

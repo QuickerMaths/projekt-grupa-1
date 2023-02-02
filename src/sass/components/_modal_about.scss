@@ -19,11 +19,17 @@
 }
 .modal {
   width: calc(100vw - 3.9rem);
-  height: 40rem;
+  max-width: 500px;
+  height: 400px;
   background: $impatient-pink;
+  background-image: url(../images/about/mobile_milk@x1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 70%;
+  background-blend-mode: soft-light;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 50% 20%;
+  border-radius: 20px;
   text-align: right;
   overflow: scroll;
   transform: scale(1);
@@ -33,12 +39,13 @@
   transition: transform 500ms ease;
   transform: scale(1);
   &__text {
-    margin: 4rem;
+    margin: 40px;
+    padding: 0 20px;
     color: $white;
     font-family: $ff-base;
     font-size: 1.2rem;
     font-weight: 500;
-    line-height: 1.9rem;
+    line-height: 19px;
     text-align: center;
     overflow: hidden;
   }
@@ -47,8 +54,8 @@
     border-radius: 50%;
     background: $impatient-pink;
     padding: 0;
-    margin-top: 18px;
-    margin-right: 18px;
+    margin-top: 38px;
+    margin-right: 38px;
     cursor: pointer;
     .modal-x-icon {
       fill: $white;
@@ -57,5 +64,31 @@
       margin: 6px;
       display: block;
     }
+  }
+}
+@media  (min-width: 768px) {
+  .modal {
+    max-width: 600px;
+    &__text {
+    margin-top: 60px;
+  }
+}
+}
+@media  (min-width: 1280px) {
+  .modal {
+    max-width: 750px;
+    &__text {
+    margin-top: 60px;
+  }
+}
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .modal {
+    background-image: url(../images/about/mobile_milk@x2.png);
+  }
+}
+@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .modal {
+    background-image: url(../images/about/mobile_milk@x3.png);
   }
 }
