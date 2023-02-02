@@ -17,6 +17,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease;
 }
+
 .modal {
 <<<<<<< Updated upstream
   width: calc(100vw - 3.9rem);
@@ -30,8 +31,12 @@
   width: 90%;
   height: 50%;
   max-width: 480px;
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
   background: $impatient-pink;
+=======
+  background: $rosie;
+>>>>>>> Stashed changes
   background-image: url(../images/about/mobile_milk@x1.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -49,6 +54,7 @@
   transition: transform 500ms ease;
   transform: scale(1);
   overflow: scroll;
+
   &__text {
     margin: 40px;
     padding: 0 20px;
@@ -62,6 +68,7 @@
     line-height: 15px;
 >>>>>>> Stashed changes
     text-align: center;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     overflow: hidden;
   }
@@ -89,6 +96,33 @@
   }
 }
 @media  (min-width: 768px) {
+=======
+  }
+    .modal-x-button {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      line-height: 3;
+      border: none;
+      border-radius: 50%;
+      background: transparent;
+      padding: 0;
+
+      cursor: pointer;
+
+      .modal-x-icon {
+        fill: $white;
+        stroke: $white;
+        padding: 3px 3px 4px 4px;
+        margin: 6px;
+        display: block;
+      }
+    }
+  }
+
+
+@media (min-width: 768px) {
+>>>>>>> Stashed changes
   .modal {
 <<<<<<< Updated upstream
     max-width: 600px;
@@ -105,17 +139,28 @@
 @media  (min-width: 1280px) {
   .modal {
     max-width: 750px;
+
     &__text {
     margin-top: 60px;
   }
 }
+<<<<<<< Updated upstream
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+=======
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+>>>>>>> Stashed changes
   .modal {
     background-image: url(../images/about/mobile_milk@x2.png);
   }
 }
-@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+
+@media (min-device-pixel-ratio: 3),
+(min-resolution: 288dpi),
+(min-resolution: 3dppx) {
   .modal {
     background-image: url(../images/about/mobile_milk@x3.png);
   }
