@@ -1,80 +1,115 @@
 .gallery {
-  background-image: linear-gradient(to bottom, $sea-salt-sherbet 40%, $white 60%);
-  background-image: url("/src/images/gallery-mobile.jpg");
-  max-width: 364px;
+  background: $white;
+  background: linear-gradient(0deg, $white 60%, $sea-salt-sherbet 60%);
+  max-width: 100%;
   height: 122px;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0px auto;
   background-size: contain;
-  
+  margin-bottom: 80px;
+
   &__container {
+    background-image: url('/src/images/gallery-mobile.jpg');
+    max-width: 320px;
+    height: 122px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px auto;
+    background-size: contain;
+  }
+  &__title {
     display: none;
   }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .gallery__container {
+    background-image: url('/src/images/gallery-tablet@2x.jpg');
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .gallery {
-        background-image: url("/src/images/gallery-tablet@2x.jpg");
-      }
-    }
-    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-      .gallery {
-        background-image: url("/src/images/gallery-tablet@3x.jpg");
-      }
-    }
-    @media screen and (min-width: 768px) {
-      .gallery {
-        background-image: linear-gradient(to bottom, $sea-salt-sherbet 40%, $white 60%);
-        background-image: url("/src/images/gallery-tablet.jpg");
-        max-width: 786px;
-        height: 264px;
-      }
-    }
-    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 768px) and (min-resolution: 192dpi),
-    screen and (min-width: 768px) and (min-resolution: 2dppx) {
-    .gallery {
-      background-image: linear-gradient(to bottom, $sea-salt-sherbet 40%, $white 60%);
-      background-image: url("/src/images/gallery-tablet@2x.jpg");
+}
+@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .gallery__container {
+    background-image: url('/src/images/gallery-tablet@3x.jpg');
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery{
+    height: 264px;
+    margin-bottom: 121px;
+  
+  &__container {
+    background-image: url('/src/images/gallery-tablet.jpg');
+    max-width: 786px;
+    height: 264px;
+}
+}
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery{
+  height: 264px;
+  margin-bottom: 121px;
+
+&__container {
+  background-image: url('/src/images/gallery-tablet@2x.jpg');
+  max-width: 786px;
+  height: 264px;
+}
+}
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 288dpi),
+  screen and (min-width: 768px) and (min-resolution: 3dppx) {
+    .gallery{
+      height: 264px;
+      margin-bottom: 121px;
+    
+    &__container {
+      background-image: url('/src/images/gallery-tablet@3x.jpg');
       max-width: 786px;
       height: 264px;
     }
-  }
-  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 768px) and (min-resolution: 288dpi),
-    screen and (min-width: 768px) and (min-resolution: 3dppx) {
-    .gallery {
-      background-image: linear-gradient(to bottom, $sea-salt-sherbet 40%, $white 60%);
-      background-image: url("/src/images/gallery-tablet@3x.jpg");
-      max-width: 786px;
-      height: 264px;
     }
   }
-  @media screen and (min-width: 1280px) {
-      .gallery {
-        background-image: linear-gradient(to bottom, $sea-salt-sherbet 40%, $white 60%);
-        background-image: url("/src/images/gallery-desktop.jpg");
-        max-width: 1280px;
-        height: 430px;
-      }
+@media screen and (min-width: 1280px) {
+  .gallery {
+    height: 430px;
+    margin-bottom: 123px;
+  
+  &__container {
+    background-image: url('/src/images/gallery-desktop.jpg');
+    max-width: 1280px;
+    height: 430px;
   }
-  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 1280px) and (min-resolution: 192dpi),
-    screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-    .gallery {
-      background-image: linear-gradient(to bottom, $sea-salt-sherbet 40%, $white 60%);
-      background-image: url("/src/images/gallery-desktop@2x.jpg");
-      max-width: 1280px;
-      height: 430px;
-    }
+}
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .gallery {
+    height: 430px;
+    margin-bottom: 123px;
+  
+  &__container {
+    background-image: url('/src/images/gallery-desktop@2x.jpg');
+    max-width: 1280px;
+    height: 430px;
   }
-  @media screen and (min-width: 1280x) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 1280px) and (min-resolution: 288dpi),
-    screen and (min-width: 1280px) and (min-resolution: 3dppx) {
-    .gallery {
-      background-image: linear-gradient(to bottom, $sea-salt-sherbet 40%, $white 60%);
-      background-image: url("/src/images/gallery-desktop@3x.jpg");
-      max-width: 1280px;
-      height: 430px;
-    }
+}
+}
+@media screen and (min-width: 1280x) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 288dpi),
+  screen and (min-width: 1280px) and (min-resolution: 3dppx) {
+  .gallery {
+    height: 430px;
+    margin-bottom: 123px;
+  
+  &__container {
+    background-image: url('/src/images/gallery-desktop@3x.jpg');
+    max-width: 1280px;
+    height: 430px;
   }
+}
+}
+

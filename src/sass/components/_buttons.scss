@@ -136,6 +136,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &--products {
+      margin-bottom: 41px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__read-more {
@@ -167,6 +173,7 @@
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
+    gap: 7px;
 
     &--red {
       background-color: $blueberry-lemonade;
@@ -201,6 +208,14 @@
 
     &:hover {
       background-color: $blueberry-lemonade;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .btn {
+    &__contact {
+      width: 198px;
+      height: 44px;
     }
   }
 }
