@@ -12,7 +12,6 @@
   transition: transform 0.5s ease-in-out;
 }
 .modal {
-
   position: relative;
   display: flex;
   justify-content: center;
@@ -47,30 +46,29 @@
     line-height: 15px;
     text-align: center;
 
-  .modal-x-button {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    line-height: 3;
-    border: none;
-    border-radius: 50%;
-    background: transparent;
-    padding: 0;
-  
-    cursor: pointer;
-    .modal-x-icon {
-      fill: $white;
-      stroke: $white;
-      padding: 3px 3px 4px 4px;
-      margin: 6px;
-      display: block;
+    .modal-x-button {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      line-height: 3;
+      border: none;
+      border-radius: 50%;
+      background: transparent;
+      padding: 0;
+
+      cursor: pointer;
+      .modal-x-icon {
+        fill: $white;
+        stroke: $white;
+        padding: 3px 3px 4px 4px;
+        margin: 6px;
+        display: block;
+      }
     }
   }
 }
-
 @media (min-width: 768px) {
   .modal {
-
     height: 40%;
     width: 70%;
     max-width: 600px;
