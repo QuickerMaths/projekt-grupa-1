@@ -2,18 +2,17 @@
   background-color: $rosie;
   padding-inline: 20px;
   z-index: 0;
-  overflow-x: hidden;
+  overflow: hidden;
+
   position: relative;
-
-  &__container {
-    max-width: 480px;
-    margin: 0 auto;
-  }
-
   &__nav-bar {
     display: flex;
     align-items: center;
     padding-top: 6px;
+
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-timing-function: $bounceSoft;
   }
   &__nav-item {
     padding-bottom: 4px;
@@ -55,6 +54,11 @@
   }
   &__slogan {
     padding-block: 137px 160px;
+
+    animation-name: slideRight;
+    animation-delay: 100ms;
+    animation-duration: 1s;
+    animation-timing-function: $bounceSoft;
   }
   &__heading {
     font-family: $ff-alt;
@@ -86,6 +90,12 @@
     bottom: 0;
     z-index: -1;
     right: 10vw;
+    transform: translateY(0);
+
+    animation-name: slideUp;
+    animation-delay: 500ms;
+    animation-duration: 1s;
+    animation-timing-function: $bounceHard;
   }
   &__circle {
     position: absolute;
@@ -98,9 +108,18 @@
     border-radius: 50%;
 
     background-color: $amelies-tutu;
+
+    animation-name: slideDown;
+    animation-delay: 500ms;
+    animation-duration: 1s;
+    animation-timing-function: $bounceHard;
   }
   &__slider {
     display: none;
+    animation-name: slideRight;
+    animation-delay: 250ms;
+    animation-duration: 1s;
+    animation-timing-function: $bounceSoft;
   }
   &__text-container {
     display: flex;
@@ -121,14 +140,24 @@
   &__grid-right {
     display: none;
   }
+  &__numbers,
+  &__info {
+    animation-name: slideLeft;
+    animation-delay: 100ms;
+    animation-duration: 1s;
+    animation-timing-function: $bounceSoft;
+  }
+  &__bg-tasty {
+    animation-name: slideLeft;
+    animation-delay: 250ms;
+    animation-duration: 1s;
+    animation-timing-function: $bounceSoft;
+  }
 }
 
 @media (min-width: 768px) {
   .header {
     padding-inline: 34px;
-    &__container {
-      max-width: 768px;
-    }
     &__grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr;
@@ -232,10 +261,6 @@
 @media (min-width: 1280px) {
   .header {
     padding: 0;
-
-    &__container {
-      max-width: 1280px;
-    }
     &__nav-bar {
       padding-inline: 47px 115px;
     }
@@ -329,5 +354,40 @@
   }
   .btn.btn__header {
     font-size: 1.4rem;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
