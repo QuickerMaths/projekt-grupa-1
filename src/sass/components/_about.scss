@@ -1,55 +1,3 @@
-@-webkit-keyframes swing {
-  15% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
-  }
-  30% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-  }
-  50% {
-    -webkit-transform: translateX(3px);
-    transform: translateX(3px);
-  }
-  65% {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-  }
-  80% {
-    -webkit-transform: translateX(2px);
-    transform: translateX(2px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@keyframes swing {
-  15% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
-  }
-  30% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-  }
-  50% {
-    -webkit-transform: translateX(3px);
-    transform: translateX(3px);
-  }
-  65% {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-  }
-  80% {
-    -webkit-transform: translateX(2px);
-    transform: translateX(2px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
 
 .about-box {
   background-color: $sea-salt-sherbet;
@@ -71,7 +19,6 @@
   &__header2 {
     font-family: $ff-alt;
     font-size: $fs-h3-mob;
-    font-weight: 400;
     color: $blueberry-lemonade;
     margin-bottom: 26px;
     text-transform: uppercase;
@@ -218,7 +165,9 @@
     }
   }
 }
-@media (min-width: 1280px) {
+
+@media (min-width: 1200px) {
+
   .about-box {
     &__header1 {
       margin-top: 125px;
@@ -233,10 +182,11 @@
       background-image: url(../images/about/desktop_milk@x1.png);
       background-size: 100%;
       background-repeat: no-repeat;
+      background-position: center;
       gap: 74px;
     }
     &__text {
-      font-size: 14px;
+      font-size: 1.4rem;
       line-height: 28px;
       max-width: 463px;
       margin-top: 51px;
@@ -262,17 +212,71 @@
     }
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .about-box > div {
     background-image: url(../images/about/desktop_milk@x2.png);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 288dpi),
-  screen and (min-width: 1280px) and (min-resolution: 3dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 288dpi),
+  screen and (min-width: 1200px) and (min-resolution: 3dppx) {
   .about-box > div {
     background-image: url(../images/about/desktop_milk@x3.png);
+  }
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }

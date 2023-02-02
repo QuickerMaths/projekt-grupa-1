@@ -11,6 +11,7 @@
   visibility: visible;
   transition: transform 0.5s ease-in-out;
 }
+
 .modal {
   position: relative;
   display: flex;
@@ -18,7 +19,8 @@
   align-items: center;
   width: 90%;
   height: 50%;
-  background: $impatient-pink;
+  max-width: 480px;
+  background: $rosie;
   background-image: url(../images/about/mobile_milk@x1.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -34,6 +36,8 @@
   pointer-events: initial;
   transition: transform 500ms ease;
   transform: scale(1);
+  overflow: scroll;
+
   &__text {
     margin: 40px;
     padding: 0 20px;
@@ -41,20 +45,20 @@
     font-family: $ff-base;
     font-size: 1.2rem;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 15px;
     text-align: center;
-    line-height: 3;
+    overflow: hidden;
   }
+
   .modal-x-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
     border: none;
     border-radius: 50%;
-    background: transparent;
+    background: $impatient-pink;
     padding: 0;
-    margin-top: 38px;
-    margin-right: 38px;
+
     cursor: pointer;
     .modal-x-icon {
       fill: $white;
@@ -70,30 +74,83 @@
   .modal {
     height: 40%;
     width: 70%;
-    max-width: 600px;
+    max-width: none;
     &__text {
       margin-top: 60px;
     }
   }
 }
-
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .modal {
-    width: 50%;
     max-width: 750px;
+
     &__text {
       margin-top: 60px;
     }
   }
-}
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .modal {
-    background-image: url(../images/about/mobile_milk@x2.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .modal {
+      background-image: url(../images/about/mobile_milk@x2.png);
+    }
   }
-}
-@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-  .modal {
-    background-image: url(../images/about/mobile_milk@x3.png);
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    .modal {
+      background-image: url(../images/about/mobile_milk@x3.png);
+
+      .modal-x-button {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        line-height: 3;
+        border: none;
+        border-radius: 50%;
+        background: transparent;
+        padding: 0;
+
+        cursor: pointer;
+        .modal-x-icon {
+          fill: $white;
+          stroke: $white;
+          padding: 3px 3px 4px 4px;
+          margin: 6px;
+          display: block;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      .modal {
+        height: 40%;
+        width: 70%;
+        max-width: 600px;
+
+        &__text {
+          margin-top: 60px;
+        }
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .modal {
+        width: 50%;
+        max-width: 750px;
+        &__text {
+          margin-top: 60px;
+        }
+      }
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .modal {
+        background-image: url(../images/about/mobile_milk@x2.png);
+      }
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      .modal {
+        background-image: url(../images/about/mobile_milk@x3.png);
+      }
+    }
   }
 }
