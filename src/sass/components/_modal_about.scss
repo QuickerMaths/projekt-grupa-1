@@ -18,17 +18,14 @@
   transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease;
 }
 .modal {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 50%;
+  width: calc(100vw - 3.9rem);
+  height: 40rem;
   background: $impatient-pink;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 50% 20%;
   text-align: right;
+  overflow: scroll;
   transform: scale(1);
   opacity: 1;
   visibility: 1;
@@ -43,15 +40,12 @@
     font-weight: 500;
     line-height: 1.9rem;
     text-align: center;
-    line-height: 3;
+    overflow: hidden;
   }
   .modal-x-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
     border: none;
     border-radius: 50%;
-    background: transparent;
+    background: $impatient-pink;
     padding: 0;
     margin-top: 18px;
     margin-right: 18px;
@@ -63,18 +57,5 @@
       margin: 6px;
       display: block;
     }
-  }
-}
-
-@media (min-width: 768px) {
-  .modal {
-    height: 40%;
-    width: 70%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .modal {
-    width: 50%;
   }
 }
