@@ -12,12 +12,14 @@
   transition: transform 0.5s ease-in-out;
 }
 .modal {
+
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
   height: 50%;
+  max-width: 480px;
   background: $impatient-pink;
   background-image: url(../images/about/mobile_milk@x1.png);
   background-size: 100%;
@@ -34,6 +36,7 @@
   pointer-events: initial;
   transition: transform 500ms ease;
   transform: scale(1);
+  overflow: scroll;
   &__text {
     margin: 40px;
     padding: 0 20px;
@@ -41,20 +44,19 @@
     font-family: $ff-base;
     font-size: 1.2rem;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 15px;
     text-align: center;
-    line-height: 3;
-  }
+
   .modal-x-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
+    line-height: 3;
     border: none;
     border-radius: 50%;
     background: transparent;
     padding: 0;
-    margin-top: 38px;
-    margin-right: 38px;
+  
     cursor: pointer;
     .modal-x-icon {
       fill: $white;
@@ -68,9 +70,11 @@
 
 @media (min-width: 768px) {
   .modal {
+
     height: 40%;
     width: 70%;
     max-width: 600px;
+
     &__text {
       margin-top: 60px;
     }
