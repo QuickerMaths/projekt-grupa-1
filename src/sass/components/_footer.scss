@@ -1,12 +1,16 @@
 .footer {
-  padding: 0px 20px;
   background-color: $sea-salt-sherbet;
-  font-family: Titan One, sans-serif;
+  font-family: $ff-alt, sans-serif;
   font-size: $fs-alt;
-
   flex-wrap: wrap;
   justify-content: center;
   display: flex;
+
+  &__container {
+    max-width: 480px;
+    margin: 0 auto;
+    width: calc(100% - 100px);
+  }
 
   &__all {
     display: block;
@@ -19,7 +23,7 @@
   }
 
   &__paragraf {
-    width: 234px;
+    width: 232px;
     height: 42px;
     color: $amelies-tutu;
     margin: 0px;
@@ -39,12 +43,12 @@
   }
 
   &__phone {
-    font-size: 12px;
+    font-size: 1.2rem;
     margin: 0px;
     margin-top: 46px;
     text-align: right;
-    width: 230px;
     font-weight: 700;
+    font-family: $ff-base, sans-serif;
   }
 
   &__phone-link {
@@ -62,68 +66,88 @@
   &__rights-item {
     color: $gypsy-magic;
     text-align: center;
-    font-size: 14px;
-    width: 140px;
+    font-size: 1.4rem;
+    width: 150px;
     font-weight: 700;
+    font-family: $ff-base, sans-serif;
+    padding: 22px 0px 25px 0px;
   }
 }
 
 .social-list {
-  list-style: none;
   display: flex;
-  width: 150px;
+  justify-content: right;
   gap: 28px;
 
   &__icon {
     cursor: pointer;
     fill: $white;
-    padding: 6.5px;
     background-color: $amelies-tutu;
-    border-radius: 50%;
+    padding: 6.5px;
+    border-radius: 50px;
     width: 32px;
     height: 32px;
+
+    &:hover {
+      background-color: $blueberry-lemonade;
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
-    padding: 0px 36px;
+
+    &__container {
+      max-width: 768px;
+      margin: 0 auto;
+    }
 
     &__all {
       display: flex;
-
-      margin-bottom: 91px;
-    }
-
-    &__left-side {
-      margin-right: 92px;
+      place-content: space-between;
     }
 
     &__head {
+      width: 340px;
       font-size: $fs-h3-tab;
     }
 
     &__right-side {
       margin-top: 0px;
     }
+    &__phone {
+      width: 268px;
+    }
 
     &__paragraf {
+      width: 340px;
+      height: 57px;
       font-size: $fs-h2-tab;
     }
     &__rights-item {
       width: 276px;
-      font-size: $fs-base;
+      padding: 29px 0px 18px 0px;
     }
   }
   .social-list {
     justify-content: right;
     width: auto;
+
+    &__icon {
+      width: 34px;
+      height: 34px;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer {
+    &__container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
     &__paragraf {
       width: 472px;
     }
@@ -131,6 +155,15 @@
     &__head {
       width: 474px;
       font-size: $fs-h3-desk;
+    }
+
+    &__phone {
+      width: 319px;
+      font-size: $fs-alt;
+    }
+
+    &__rights-item {
+      padding: 9px 0px 10px 0px;
     }
   }
 }

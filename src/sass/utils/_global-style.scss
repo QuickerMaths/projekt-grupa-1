@@ -1,4 +1,20 @@
 // Global Styles
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 912px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1280px) {
+  .container-desktop {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
 
 *,
 *::after,
@@ -14,6 +30,10 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
