@@ -1,9 +1,3 @@
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease;
-}
 .backdrop {
   z-index: 100;
   position: fixed;
@@ -14,8 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease;
+  visibility: visible;
+  transition: transform 0.5s ease-in-out;
 }
 .modal {
   position: relative;
