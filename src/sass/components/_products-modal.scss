@@ -1,0 +1,60 @@
+.backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  transform: scale(1);
+  visibility: visible;
+  transition: transform 0.5s ease-in-out;
+}
+
+.modal-products {
+  position: relative;
+  background-color: pink;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: calc(90% - 2em);
+  max-width: 480px;
+  height: auto;
+
+  &__button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__svg {
+    fill: $white;
+  }
+
+  &__content {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    max-width: 480px;
+  }
+
+  &__title {
+    font-size: 2rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 12px;
+    font-family: $ff-alt;
+    color: $white;
+  }
+  &__text {
+    text-align: center;
+    line-height: 2;
+  }
+}

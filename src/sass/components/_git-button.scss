@@ -1,0 +1,106 @@
+.creators-button {
+  position: fixed;
+  bottom: 50px;
+  left: 2.5px;
+  overflow: hidden;
+  background-color: pink;
+  border-radius: 50px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  transition: width 0.5s, border-radius 0.5s;
+  z-index: 10000;
+
+  &.rewind-creators {
+    width: 315px;
+    border-radius: 15px;
+  }
+
+  &__link {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    font-family: $fs-base;
+    color: $black;
+    font-weight: 700;
+    min-width: 330px;
+  }
+
+  &__svg {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+  }
+}
+
+.git-button {
+  position: fixed;
+  bottom: 10px;
+  left: 2.5px;
+  overflow: hidden;
+  background-color: pink;
+  border-radius: 50px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  transition: width 0.5s, border-radius 0.5s;
+  z-index: 10000;
+
+  &.rewind-git {
+    width: 260px;
+    border-radius: 15px;
+  }
+
+  &__link {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    font-family: $fs-base;
+    color: $black;
+    font-weight: 700;
+    min-width: 210px;
+  }
+
+  &__svg {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+}
+
+.git-circle-animation {
+  animation: git-circle-animation 1s ease-in-out;
+}
+
+@keyframes git-circle-animation {
+  0% {
+    transform: translateY(-20%);
+  }
+  20% {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(-20%);
+  }
+  60% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media (min-width: 768px) {
+  .creators-button {
+    left: 10px;
+  }
+
+  .git-button {
+    left: 10px;
+  }
+}
