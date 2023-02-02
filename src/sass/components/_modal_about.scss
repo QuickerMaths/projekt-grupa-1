@@ -36,16 +36,16 @@
   pointer-events: initial;
   transition: transform 500ms ease;
   transform: scale(1);
-  overflow: scroll;
+  overflow: hidden;
 
   &__text {
     margin: 40px;
     padding: 0 20px;
     color: $white;
     font-family: $ff-base;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 500;
-    line-height: 15px;
+    line-height: 2.5;
     text-align: center;
     overflow: hidden;
   }
