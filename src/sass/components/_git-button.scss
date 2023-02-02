@@ -1,7 +1,7 @@
-.git-button {
+.creators-button {
   position: fixed;
-  bottom: 10px;
-  left: 10px;
+  bottom: 50px;
+  left: 2.5px;
   overflow: hidden;
   background-color: pink;
   border-radius: 50px;
@@ -11,12 +11,48 @@
   transition: width 0.5s, border-radius 0.5s;
   z-index: 10000;
 
-  &.two {
+  &.rewind-creators {
+    width: 315px;
+    border-radius: 15px;
+  }
+
+  &__link {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    font-family: $fs-base;
+    color: $black;
+    font-weight: 700;
+    min-width: 330px;
+  }
+
+  &__svg {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+  }
+}
+
+.git-button {
+  position: fixed;
+  bottom: 10px;
+  left: 2.5px;
+  overflow: hidden;
+  background-color: pink;
+  border-radius: 50px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  transition: width 0.5s, border-radius 0.5s;
+  z-index: 10000;
+
+  &.rewind-git {
     width: 260px;
     border-radius: 15px;
   }
 
-  &__text {
+  &__link {
     position: absolute;
     top: 50%;
     left: 40px;
@@ -56,5 +92,15 @@
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+@media (min-width: 768px) {
+  .creators-button {
+    left: 10px;
+  }
+
+  .git-button {
+    left: 10px;
   }
 }
