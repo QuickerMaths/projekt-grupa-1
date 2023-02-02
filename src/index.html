@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Icecream - a family company famous for their fresh icecreams and original flavours"
+    />
+    <meta name="keywords" content="icecream, foodtruck, icecream truck, icecream booth" />
+    <meta name="authors" content="projekt-grupa-1" />
     <title>Ice Cream</title>
+    <link rel="icon" type="image/x-icon" href="../src/images/favicon.png" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -12,40 +20,51 @@
     />
     <link rel="stylesheet" href="./sass/main.scss" />
   </head>
+
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
+    <div class="container-desktop">
+      <!-- Header -->
+      <include src="./partials/_header.html"></include>
 
-    <!-- Header -->
-    <include src="./partials/_header.html"></include>
+      <!-- Menu modal -->
 
-    <!-- Menu modal -->
+      <include src="./partials/_menu-modal.html"></include>
+      <main>
+        <!-- Products Section -->
 
-    <include src="./partials/_menu-modal.html"></include>
+        <include src="./partials/_products.html"></include>
+        <include src="./partials/products-modal.html"></include>
+        <!-- About Section-->
 
-    <!-- Products Section -->
+        <include src="./partials/_about.html"></include>
+        <include src="./partials/_modal_about.html"></include>
 
-    <include src="./partials/_products.html"></include>
-    <include src="./partials/products-modal.html"></include>
-    <!-- About Section-->
+        <!-- Advantages section -->
 
-    <include src="./partials/_about.html"></include>
-    <include src="./partials/_modal_about.html"></include>
+        <include src="./partials/_advantages.html"></include>
 
-    <!-- Advantages section -->
+        <!-- Gallery Section -->
 
-    <include src="./partials/_advantages.html"></include>
+        <include src="./partials/gallery.html"></include>
 
-    <!-- Customer Reviews Section -->
+        <!-- Customer Reviews Section -->
 
-    <include src="./partials/customer-reviews.html"></include>
+        <include src="./partials/customer-reviews.html"></include>
 
-    <!-- Contacts Section -->
+        <!-- Contacts Section -->
 
-    <include src="./partials/_contacts.html"></include>
+        <include src="./partials/_contacts.html"></include>
+        <include src="./partials/_modal_contacts.html"></include>
+      </main>
+      <!-- Footer Section -->
 
-    <!-- Footer Section -->
+      <include src="./partials/_footer.html"></include>
+    </div>
 
-    <include src="./partials/_footer.html"></include>
+    <!-- Git button -->
+
+    <include src="./partials/git-button.html"></include>
 
     <!-- JS  -->
     <script
@@ -54,8 +73,11 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script defer src="./git-button.js"></script>
     <script defer src="./mobile-menu.js"></script>
     <script defer src="./modal_about.js"></script>
+    <script defer src="./modal_contacts.js"></script>
+    <script defer src="./scroll.js"></script>
     <script defer src="./index.js" type="module"></script>
   </body>
 </html>
