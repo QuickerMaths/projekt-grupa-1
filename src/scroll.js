@@ -2,9 +2,6 @@
 
 const logo = document.querySelector('.header__logo');
 const headerTitle = document.querySelector('.header__heading');
-const buttonHeaderHowMade = document.querySelector('.btn__header--howmade');
-const buttonHeaderProducts = document.querySelector('.btn__header--products');
-
 // Products
 
 const labelProducts = document.querySelector('.products__label');
@@ -60,7 +57,6 @@ function scrollAnimate(element, animationType, optionsType, mediaQueries) {
     entries.forEach(entry => {
       if (entry.isIntersecting && mediaQueries.matches) {
         element.classList.add(`${animationType}`);
-
         observer.unobserve(element);
       }
     });
@@ -72,8 +68,6 @@ function scrollAnimate(element, animationType, optionsType, mediaQueries) {
 
 scrollAnimate(logo, 'fade-in-down', options, all);
 scrollAnimate(headerTitle, 'scale', options, all);
-scrollAnimate(buttonHeaderHowMade, 'scale', options, all);
-scrollAnimate(buttonHeaderProducts, 'scale', options, all);
 
 // Products
 
