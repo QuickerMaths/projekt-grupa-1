@@ -192,6 +192,7 @@
   &__member-description {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   &__team {
@@ -478,9 +479,9 @@
 @media (min-width: 768px) {
   .presentation {
     background-color: $rosie;
-    max-width: 768px;}
+    max-width: 768px;
+  }
 }
-
 
 @media (min-width: 1280px) {
   .presentation {
@@ -493,10 +494,8 @@
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
-  
-  
+
     &__group-name {
-     
       font-size: 8rem;
       font-weight: 400;
     }
@@ -508,33 +507,33 @@
       margin-top: 20px;
       margin-bottom: 0px;
       &--span {
-
         font-size: 5rem;
       }
     }
-  
+
     &__button {
       font-size: 2rem;
       width: 600px;
       height: 60px;
-  
+
       &:hover {
         background-color: $hover-background;
       }
     }
-  
+
     &__previous-site {
       font-size: 2rem;
     }
 
-    &__persons{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-column-gap: 80px;
-
+    &__persons {
+      display: flex;
+      flex-direction: row;
+      // align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 50px;
     }
-  
+
     &__team {
       width: calc(100% - 10px);
       font-size: 2rem;
@@ -542,23 +541,22 @@ column-gap: 80px;
       margin-bottom: 50px;
       max-width: 1000px;
     }
-  
+
     &__team-members {
       display: flex;
       flex-direction: column;
       column-gap: 50px;
       // width: calc(100% - 20px);
     }
-  
+
     &__team-members-name {
       margin: 30px auto 30px auto;
       row-gap: 20px;
       padding-top: 30px;
-
     }
     &__team-members-surname {
       font-size: 2rem;
-      &--prezi{
+      &--prezi {
         font-size: 3rem;
       }
     }
@@ -569,20 +567,17 @@ column-gap: 80px;
       padding-left: 6px;
       font-size: 1.7rem;
 
-      &--Juli{
+      &--Juli {
         font-size: 1.4rem;
-
       }
-      &--descriptions{
+      &--descriptions {
         font-size: 2.2rem;
       }
     }
 
-  
     &__problems {
       font-size: 5rem;
     }
-
   }
 }
 .overlay {
