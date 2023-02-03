@@ -67,7 +67,6 @@ function scrollAnimate(element, animationType, optionsType, mediaQueries) {
 // Header
 
 scrollAnimate(logo, 'fade-in-down', options, all);
-scrollAnimate(headerTitle, 'scale', options, all);
 
 // Products
 

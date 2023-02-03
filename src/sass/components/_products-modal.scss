@@ -25,16 +25,16 @@
 
   &__button-close {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 10px;
+    right: -110px;
     border: none;
-    border-radius: 50%;
-    padding: 0;
+    background: transparent;
     cursor: pointer;
   }
 
   &__svg {
     fill: $white;
+    stroke: $white;
   }
 
   &__content {
