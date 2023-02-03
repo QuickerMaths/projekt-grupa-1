@@ -27,7 +27,13 @@
     padding: 43px 20px;
     margin-bottom: 20px;
     cursor: pointer;
+
+    //taka propozycja animacji
+    // &:hover {
+    //   animation: jump 1s ease 0s 1 normal;
+    // }
     width: 100%;
+
   }
 
   &__list-item:last-child {
@@ -142,29 +148,29 @@
 }
 
 //taka propozycja animacji
-@keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-  80% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
+// @keyframes jump {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   20% {
+//     transform: translateY(0);
+//   }
+//   40% {
+//     transform: translateY(-30px);
+//   }
+//   50% {
+//     transform: translateY(0);
+//   }
+//   60% {
+//     transform: translateY(-15px);
+//   }
+//   80% {
+//     transform: translateY(0);
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
 /* ---------- END RESPONSIVE TABLET ---------- */
 @media screen and (min-width: 768px) {
   .contacts {
